@@ -9,10 +9,10 @@ Setting :
 
 Run application:
 ```
-go run application.go
+sh run.sh
 ```
   
 Run benchmark:
 ```
-go test -v -bench=. -run=none -benchmem .
+sh benchmark.sh
 ```
