@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	// benchmark "topic/apiTest"
-	jump_game_II "github.com/yoea_kai/leet_code/topic/jump_game_II"
+	jump_game_II "github.com/YoeaKai/leet_code/topic/jump_game_II"
 )
 
 func main() {

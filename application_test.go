@@ -3,7 +3,7 @@ package main
 import (
 	"testing"
 
-	"github.com/yoea_kai/leet_code/topic/n_queens"
+	"github.com/YoeaKai/leet_code/topic/n_queens"
 )
 
 func BenchmarkFunc(b *testing.B) {

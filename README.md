@@ -3,7 +3,7 @@ Practice code of leetcode.
 
 Setting :
 1. "go.gopath": "/Users/<userName>/go",
-2. path: github.com/yoea_kai/leet_code/
+2. path: github.com/YoeaKai/leet_code/
 
 ---
 
