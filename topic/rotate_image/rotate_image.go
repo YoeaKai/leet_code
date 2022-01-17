@@ -46,3 +46,27 @@ func RotateII(matrix [][]int) {
 		}
 	}
 }
+
+func RotateIII(matrix [][]int) {
+	var m int
+	n := len(matrix) / 2
+	l := len(matrix)
+	if len(matrix)%2 == 0 {
+		m = n
+	} else {
+		m = n + 1
+	}
+	// Move according to different quadrants
+	for i := 0; i < m; i++ {
+		for j := 0; j < n; j++ {
+			x, y := i, j
+			carry := matrix[i][j]
+			for k := 0; k < 4; k++ {
+				x, y = y, l-x-1
+				tmp := matrix[x][y]
+				matrix[x][y] = carry
+				carry = tmp
+			}
+		}
+	}
+}
