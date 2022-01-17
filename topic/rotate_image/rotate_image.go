@@ -14,8 +14,8 @@ func Rotate(matrix [][]int) {
 	for i := 0; i < n; i++ {
 		for j := 0; j < n-i-1; j++ {
 			tmp := matrix[i][j]
-			matrix[i][j] = matrix[j][i]
-			matrix[j][i] = tmp
+			matrix[i][j] = matrix[n-j-1][n-i-1]
+			matrix[n-j-1][n-i-1] = tmp
 		}
 	}
 }
