@@ -8,8 +8,7 @@ import (
 
 func run() {
 	//fmt.Println(longest_increasing_path_in_a_matrix.LongestIncreasingPath([][]int{{9, 9, 4}, {6, 6, 8}, {2, 1, 1}}))
-	//fmt.Println(permutations_II.PermuteUnique([]int{1, 1, 2, 2}))
-	rotate_image.Rotate([][]int{{9, 9, 4}, {6, 6, 8}, {2, 1, 1}})
+	rotate_image.Rotate([][]int{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}})
 }
 
 func main() {
