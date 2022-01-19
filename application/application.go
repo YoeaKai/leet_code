@@ -3,12 +3,12 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/product_of_array_except_self"
+	"github.com/YoeaKai/leet_code/topic/maximize_distance_to_closest_person"
 )
 
 func run() {
 	//rotate_image.Rotate([][]int{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}})
-	println(product_of_array_except_self.ProductExceptSelf([]int{0, 0, 0}))
+	println(maximize_distance_to_closest_person.MaxDistToClosest([]int{0, 0, 1, 0, 0, 1}))
 }
 
 func main() {
