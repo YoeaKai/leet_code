@@ -4,6 +4,7 @@ import (
 	"sort"
 )
 
+// Method 1
 func findVal(x, y int, matrix, maxMap *[][]int, res, max *int) {
 	if (*maxMap)[x][y] == -1 {
 		findMax(x, y, matrix, maxMap, res)
@@ -58,13 +59,14 @@ func LongestIncreasingPath(matrix [][]int) int {
 	return res + 1
 }
 
+// Method 2
 type Cell struct {
 	val int
 	x   int
 	y   int
 }
 
-func LongestIncreasingPathII(matrix [][]int) int {
+func LongestIncreasingPath2(matrix [][]int) int {
 	res := 0
 	maxMap := make([][]int, len(matrix))
 	cellMap := make([]Cell, len(matrix)*len(matrix[0]))

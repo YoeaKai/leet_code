@@ -1,5 +1,6 @@
 package substring_with_concatenation_of_all_words
 
+// Method 1
 func FindSubstring(s string, words []string) []int {
 	ans := []int{}
 	wordsMap := map[string]int{}
@@ -35,7 +36,7 @@ func FindSubstring(s string, words []string) []int {
 	return ans
 }
 
-/*
+// Method 2 (Time Limit Exceeded)
 func isAns(s string, words []string) bool {
 	m := 0
 	for l := 0; l < len(words); l++ {
@@ -51,7 +52,7 @@ func isAns(s string, words []string) bool {
 				}
 				tmp := make([]string, len(words))
 				copy(tmp, words)
-				if isAns(s[len(words[l]):len(s)], append(tmp[:l], words[l+1:]...)) {
+				if isAns(s[len(words[l]):], append(tmp[:l], words[l+1:]...)) {
 					return true
 				}
 			}
@@ -60,7 +61,8 @@ func isAns(s string, words []string) bool {
 	return false
 }
 
-func FindSubstring(s string, words []string) []int {
+// Status: Time Limit Exceeded
+func FindSubstring2(s string, words []string) []int {
 	n := len(words) * len(words[0])
 	i := 0
 	k := 0
@@ -92,4 +94,3 @@ func FindSubstring(s string, words []string) []int {
 
 	return ans
 }
-*/

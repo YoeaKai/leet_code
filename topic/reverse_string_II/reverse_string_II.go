@@ -1,5 +1,6 @@
 package reverse_string_II
 
+// Method 1
 func reverse(s []byte) {
 	front := 0
 	tail := len(s) - 1
@@ -18,13 +19,13 @@ func ReverseStr(s string, k int) string {
 		reverse(str[pos : pos+k])
 	}
 	if pos < len(str) {
-		reverse(str[pos:len(str)])
+		reverse(str[pos:])
 	}
 	return string(str)
 }
 
-/*
-func ReverseStr(s string, k int) string {
+// Method 2
+func ReverseStr2(s string, k int) string {
 	pos := 0
 	for ; pos+k-1 < len(s); pos += 2 * k {
 		for i := 0; i < k-i-1; i++ {
@@ -41,4 +42,3 @@ func ReverseStr(s string, k int) string {
 
 	return s
 }
-*/

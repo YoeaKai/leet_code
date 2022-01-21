@@ -5,6 +5,7 @@ type ListNode struct {
 	Next *ListNode
 }
 
+// Method 1
 func SwapPairs(head *ListNode) *ListNode {
 	if head == nil || head.Next == nil {
 		return head
@@ -16,8 +17,8 @@ func SwapPairs(head *ListNode) *ListNode {
 	return node
 }
 
-/*
-func SwapPairs(head *ListNode) *ListNode {
+// Method 2
+func SwapPairs2(head *ListNode) *ListNode {
 	if head == nil || head.Next == nil {
 		return head
 	}
@@ -39,4 +40,3 @@ func SwapPairs(head *ListNode) *ListNode {
 
 	return result
 }
-*/

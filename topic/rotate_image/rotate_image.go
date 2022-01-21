@@ -1,5 +1,6 @@
 package rotate_image
 
+// Method 1
 func findPos(i, j, carry int, matrix [][]int, visited [][]bool) {
 	x, y := j, len(visited)-i-1
 	tmp := matrix[x][y]
@@ -27,7 +28,8 @@ func Rotate(matrix [][]int) {
 	}
 }
 
-func RotateII(matrix [][]int) {
+// Method 2
+func Rotate2(matrix [][]int) {
 	// Swing left and right
 	n := len(matrix[0])
 	for i := 0; i < n; i++ {
@@ -47,7 +49,8 @@ func RotateII(matrix [][]int) {
 	}
 }
 
-func RotateIII(matrix [][]int) {
+// Method 3
+func Rotate3(matrix [][]int) {
 	var m int
 	n := len(matrix) / 2
 	l := len(matrix)

@@ -1,5 +1,6 @@
 package reverse_words_in_a_string_III
 
+// Method 1
 func reverse(s []byte) {
 	front := 0
 	tail := len(s) - 1
@@ -22,13 +23,13 @@ func ReverseWords(s string) string {
 		}
 	}
 
-	reverse(str[pos:len(str)])
+	reverse(str[pos:])
 
 	return string(str)
 }
 
-/*
-func ReverseWords(s string) string {
+// Method 2
+func ReverseWords2(s string) string {
 	head := 0
 	pos := 0
 
@@ -50,4 +51,3 @@ func ReverseWords(s string) string {
 
 	return s
 }
-*/

@@ -1,5 +1,6 @@
 package trapping_rain_water
 
+// Method 1
 func Trap(height []int) int {
 	frontMaxVal := height[0]
 	frontMaxPos := 0
@@ -107,8 +108,8 @@ func Trap(height []int) int {
 	return sum
 }
 
-/*
-func Trap(height []int) int {
+// Method 2
+func Trap2(height []int) int {
 	if len(height) <= 2 {
 		return 0
 	}
@@ -135,4 +136,3 @@ func Trap(height []int) int {
 	}
 	return result
 }
-*/

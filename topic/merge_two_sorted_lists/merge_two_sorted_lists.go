@@ -5,6 +5,7 @@ type ListNode struct {
 	Next *ListNode
 }
 
+// Method 1
 func MergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
 	point := &ListNode{}
 	head := point
@@ -28,8 +29,8 @@ func MergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
 	return head.Next
 }
 
-/*
-func MergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
+// Method 2
+func MergeTwoLists2(l1 *ListNode, l2 *ListNode) *ListNode {
 	if l1 == nil {
 		return l2
 	} else if l2 == nil {
@@ -80,4 +81,3 @@ func MergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
 
 	return head
 }
-*/
