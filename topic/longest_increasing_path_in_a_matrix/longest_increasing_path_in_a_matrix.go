@@ -1,5 +1,9 @@
 package longest_increasing_path_in_a_matrix
 
+import (
+	"sort"
+)
+
 func findVal(x, y int, matrix, maxMap *[][]int, res, max *int) {
 	if (*maxMap)[x][y] == -1 {
 		findMax(x, y, matrix, maxMap, res)
@@ -47,6 +51,63 @@ func LongestIncreasingPath(matrix [][]int) int {
 			}
 			if maxMap[i][j] > res {
 				res = maxMap[i][j]
+			}
+		}
+	}
+
+	return res + 1
+}
+
+type Cell struct {
+	val int
+	x   int
+	y   int
+}
+
+func LongestIncreasingPathII(matrix [][]int) int {
+	res := 0
+	maxMap := make([][]int, len(matrix))
+	cellMap := make([]Cell, len(matrix)*len(matrix[0]))
+	for i := 0; i < len(matrix); i++ {
+		// initial maxMap
+		maxMap[i] = make([]int, len(matrix[0]))
+
+		// initial cellMap
+		for j := 0; j < len(matrix[0]); j++ {
+			pos := i*len(matrix[0]) + j
+			cellMap[pos].val = matrix[i][j]
+			cellMap[pos].x = i
+			cellMap[pos].y = j
+		}
+	}
+	sort.Slice(cellMap, func(i, j int) bool { return cellMap[i].val < cellMap[j].val })
+
+	for _, val := range cellMap {
+		if val.y > 0 && matrix[val.x][val.y-1] > matrix[val.x][val.y] && maxMap[val.x][val.y]+1 > maxMap[val.x][val.y-1] {
+			maxMap[val.x][val.y-1] = maxMap[val.x][val.y] + 1
+			if maxMap[val.x][val.y-1] > res {
+				res = maxMap[val.x][val.y-1]
+			}
+		}
+
+		if val.y < len(matrix[0])-1 && matrix[val.x][val.y+1] > matrix[val.x][val.y] && maxMap[val.x][val.y]+1 > maxMap[val.x][val.y+1] {
+			maxMap[val.x][val.y+1] = maxMap[val.x][val.y] + 1
+			if maxMap[val.x][val.y+1] > res {
+				res = maxMap[val.x][val.y+1]
+			}
+		}
+
+		if val.x > 0 && matrix[val.x-1][val.y] > matrix[val.x][val.y] && maxMap[val.x][val.y]+1 > maxMap[val.x-1][val.y] {
+			maxMap[val.x-1][val.y] = maxMap[val.x][val.y] + 1
+			if maxMap[val.x-1][val.y] > res {
+				res = maxMap[val.x-1][val.y]
+			}
+		}
+
+		if val.x < len(matrix)-1 && matrix[val.x+1][val.y] > matrix[val.x][val.y] && maxMap[val.x][val.y]+1 > maxMap[val.x+1][val.y] {
+			maxMap[val.x+1][val.y] = maxMap[val.x][val.y] + 1
+			if maxMap[val.x+1][val.y] > res {
+				res = maxMap[val.x+1][val.y]
 			}
 		}
 	}
