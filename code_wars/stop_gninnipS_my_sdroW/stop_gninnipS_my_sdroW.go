@@ -1,5 +1,6 @@
 package stop_gninnipS_my_sdroW
 
+// Method 1
 func reverse(s []byte) {
 	front := 0
 	tail := len(s) - 1
@@ -25,14 +26,14 @@ func SpinWords(str string) string {
 	}
 
 	if len(str)-pos >= 5 {
-		reverse(s[pos:len(s)])
+		reverse(s[pos:])
 	}
 
 	return string(s)
 }
 
-/*
-func SpinWords(str string) string {
+// Method 2
+func SpinWords2(str string) string {
 	head := 0
 	pos := 0
 
@@ -58,4 +59,3 @@ func SpinWords(str string) string {
 
 	return str
 }
-*/
