@@ -3,13 +3,13 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/wildcard_matching"
+	"github.com/YoeaKai/leet_code/topic/spiral_matrix"
 )
 
 func run() {
-	println(wildcard_matching.IsMatch("aaa", "*ba"))
+	//println(wildcard_matching.IsMatch("aaa", "*ba"))
 	//println(group_anagrams.GroupAnagrams([]string{"eat", "tea", "tan", "ate", "nat", "bat"}))
-	//construct_binary_tree_from_preorder_and_inorder_traversal.BuildTree([]int{3, 9, 20, 15, 7}, []int{9, 3, 15, 20, 7})
+	spiral_matrix.SpiralOrder([][]int{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}})
 }
 
 func main() {
