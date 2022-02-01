@@ -3,12 +3,12 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/jump_game"
+	"github.com/YoeaKai/leet_code/topic/minimum_number_of_steps_to_make_two_strings_anagram"
 )
 
 func run() {
-	//println(wildcard_matching.IsMatch("aaa", "*ba"))
-	println(jump_game.CanJump([]int{1, 2}))
+	println(minimum_number_of_steps_to_make_two_strings_anagram.MinSteps("bab", "aba"))
+	// println(jump_game.CanJump([]int{1, 2}))
 }
 
 func main() {

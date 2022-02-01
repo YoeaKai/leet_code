@@ -4,7 +4,6 @@ package maximum_absolute_sum_of_any_subarray
 // = one prefix sum - the other prefix sum
 // <= maximum prefix sum - minimum prefix sum
 
-// Method 1
 func MaxAbsoluteSum(nums []int) int {
 	max, min, sum := 0, 0, 0
 
