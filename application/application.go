@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/minimum_number_of_steps_to_make_two_strings_anagram"
+	"github.com/YoeaKai/leet_code/topic/maximal_rectangle"
 )
 
 func run() {
-	println(minimum_number_of_steps_to_make_two_strings_anagram.MinSteps("bab", "aba"))
+	println(maximal_rectangle.MaximalRectangle([][]byte{{'0', '1', '1', '0'}, {'0', '0', '1', '0'}, {'0', '0', '1', '0'}, {'0', '0', '1', '1'}, {'0', '1', '1', '1'}, {'0', '1', '1', '1'}, {'1', '1', '1', '1'}}))
 	// println(jump_game.CanJump([]int{1, 2}))
 }
 
