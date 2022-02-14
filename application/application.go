@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/maximal_rectangle"
+	"github.com/YoeaKai/leet_code/topic/largest_rectangle_in_histogram"
 )
 
 func run() {
-	println(maximal_rectangle.MaximalRectangle([][]byte{{'0', '1', '1', '0'}, {'0', '0', '1', '0'}, {'0', '0', '1', '0'}, {'0', '0', '1', '1'}, {'0', '1', '1', '1'}, {'0', '1', '1', '1'}, {'1', '1', '1', '1'}}))
+	println(largest_rectangle_in_histogram.LargestRectangleArea([]int{3, 6, 5, 7, 4, 8, 1, 0}))
 	// println(jump_game.CanJump([]int{1, 2}))
 }
 
