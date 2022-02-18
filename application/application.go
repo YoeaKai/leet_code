@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/insert_interval"
+	"github.com/YoeaKai/leet_code/topic/smallest_value_of_the_rearranged_number"
 )
 
 func run() {
-	println(insert_interval.Insert([][]int{{1, 5}}, []int{0, 0}))
+	println(smallest_value_of_the_rearranged_number.SmallestNumber(0))
 }
 
 func main() {
