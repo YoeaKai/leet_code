@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/permutation_sequence"
+	"github.com/YoeaKai/leet_code/topic/insert_interval"
 )
 
 func run() {
-	println(permutation_sequence.GetPermutation(5, 5))
+	println(insert_interval.Insert([][]int{{1, 5}}, []int{0, 0}))
 }
 
 func main() {
