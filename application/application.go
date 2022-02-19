@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/smallest_value_of_the_rearranged_number"
+	"github.com/YoeaKai/leet_code/topic/length_of_last_word"
 )
 
 func run() {
-	println(smallest_value_of_the_rearranged_number.SmallestNumber(0))
+	println(length_of_last_word.LengthOfLastWord("   fly me   to   the moon  "))
 }
 
 func main() {
