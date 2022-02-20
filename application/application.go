@@ -3,18 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/rotate_list"
+	"github.com/YoeaKai/leet_code/topic/shortest_unsorted_continuous_subarray"
 )
 
 func run() {
-
-	e := rotate_list.ListNode{Val: 5, Next: nil}
-	d := rotate_list.ListNode{Val: 4, Next: &e}
-	c := rotate_list.ListNode{Val: 3, Next: &d}
-	b := rotate_list.ListNode{Val: 2, Next: &c}
-	a := rotate_list.ListNode{Val: 1, Next: &b}
-	println(rotate_list.RotateRight(&a, 2))
-
+	println(shortest_unsorted_continuous_subarray.FindUnsortedSubarray([]int{2, 6, 4, 8, 10, 9, 15}))
 	// println(length_of_last_word.LengthOfLastWord("   fly me   to   the moon  "))
 }
 
