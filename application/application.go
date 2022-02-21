@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/coin_change_2"
+	"github.com/YoeaKai/leet_code/topic/spiral_matrix_II"
 )
 
 func run() {
-	println(coin_change_2.Change(5, []int{1, 2, 5}))
+	println(spiral_matrix_II.GenerateMatrix(3))
 	// println(length_of_last_word.LengthOfLastWord("   fly me   to   the moon  "))
 }
 
