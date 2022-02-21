@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/shortest_unsorted_continuous_subarray"
+	"github.com/YoeaKai/leet_code/topic/coin_change_2"
 )
 
 func run() {
-	println(shortest_unsorted_continuous_subarray.FindUnsortedSubarray([]int{2, 6, 4, 8, 10, 9, 15}))
+	println(coin_change_2.Change(5, []int{1, 2, 5}))
 	// println(length_of_last_word.LengthOfLastWord("   fly me   to   the moon  "))
 }
 
