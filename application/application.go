@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/add_binary"
+	"github.com/YoeaKai/leet_code/topic/unique_paths"
 )
 
 func run() {
-	println(add_binary.AddBinary("101", "11"))
+	println(unique_paths.UniquePaths(4, 5))
 	// println(length_of_last_word.LengthOfLastWord("   fly me   to   the moon  "))
 }
 
