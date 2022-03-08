@@ -3,12 +3,12 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/climbing_stairs"
+	"github.com/YoeaKai/leet_code/topic/valid_number"
 )
 
 func run() {
 	//println(unique_paths.UniquePaths(4, 5))
-	println(climbing_stairs.ClimbStairs(6))
+	println(valid_number.IsNumber2("0.223"))
 }
 
 func main() {
