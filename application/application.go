@@ -3,12 +3,12 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/split_array_largest_sum"
+	"github.com/YoeaKai/leet_code/topic/sqrt"
 )
 
 func run() {
-	println(split_array_largest_sum.SplitArray([]int{7, 2, 5, 10, 8}, 2))
-	//println(split_array_largest_sum.SplitArray([]int{7, 2, 5, 10, 8}, 4))
+	//println(different_ways_to_add_parentheses.DiffWaysToCompute("99999999"))
+	println(sqrt.MySqrt(99999999))
 }
 
 func main() {
