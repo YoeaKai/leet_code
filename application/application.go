@@ -3,12 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/sqrt"
+	"github.com/YoeaKai/leet_code/topic/search_a_2D_matrix"
 )
 
 func run() {
-	//println(different_ways_to_add_parentheses.DiffWaysToCompute("99999999"))
-	println(sqrt.MySqrt(99999999))
+	println(search_a_2D_matrix.SearchMatrix([][]int{{1, 1}}, 2))
 }
 
 func main() {
