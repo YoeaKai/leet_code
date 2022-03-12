@@ -3,11 +3,12 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/set_matrix_zeroes"
+	"github.com/YoeaKai/leet_code/topic/unique_paths_II"
 )
 
 func run() {
-	set_matrix_zeroes.SetZeroes([][]int{{0, 1, 2, 6}, {3, 4, 5, 2}, {1, 3, 1, 5}})
+	// unique_paths_II.UniquePathsWithObstacles([][]int{{0, 1}, {0, 0}})
+	unique_paths_II.UniquePathsWithObstacles([][]int{{0, 0, 0}, {0, 1, 0}, {0, 0, 0}})
 }
 
 func main() {
