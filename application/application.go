@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/search_a_2D_matrix"
+	"github.com/YoeaKai/leet_code/topic/sort_colors"
 )
 
 func run() {
-	println(search_a_2D_matrix.SearchMatrix([][]int{{1, 1}}, 2))
+	sort_colors.SortColors([]int{2, 0, 1})
 }
 
 func main() {
