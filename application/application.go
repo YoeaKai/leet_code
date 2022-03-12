@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/sort_colors"
+	"github.com/YoeaKai/leet_code/topic/set_matrix_zeroes"
 )
 
 func run() {
-	sort_colors.SortColors([]int{2, 0, 1})
+	set_matrix_zeroes.SetZeroes([][]int{{0, 1, 2, 6}, {3, 4, 5, 2}, {1, 3, 1, 5}})
 }
 
 func main() {
