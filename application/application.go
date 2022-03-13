@@ -3,12 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/unique_paths_II"
+	"github.com/YoeaKai/leet_code/topic/maximum_sum_circular_subarray"
 )
 
 func run() {
-	// unique_paths_II.UniquePathsWithObstacles([][]int{{0, 1}, {0, 0}})
-	unique_paths_II.UniquePathsWithObstacles([][]int{{0, 0, 0}, {0, 1, 0}, {0, 0, 0}})
+	maximum_sum_circular_subarray.MaxSubarraySumCircular([]int{5, -3, 5})
 }
 
 func main() {
