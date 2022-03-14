@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/maximum_sum_circular_subarray"
+	"github.com/YoeaKai/leet_code/topic/text_justification"
 )
 
 func run() {
-	maximum_sum_circular_subarray.MaxSubarraySumCircular([]int{5, -3, 5})
+	println(text_justification.FullJustify([]string{"This", "is", "an", "example", "of", "text", "justification."}, 16))
 }
 
 func main() {
