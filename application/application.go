@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/text_justification"
+	"github.com/YoeaKai/leet_code/topic/combinations"
 )
 
 func run() {
-	println(text_justification.FullJustify([]string{"This", "is", "an", "example", "of", "text", "justification."}, 16))
+	println(combinations.Combine(4, 2))
 }
 
 func main() {
