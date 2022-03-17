@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/sum_of_distances_in_tree"
+	"github.com/YoeaKai/leet_code/topic/word_search"
 )
 
 func run() {
-	println(sum_of_distances_in_tree.SumOfDistancesInTree(5, [][]int{{0, 1}, {0, 2}, {2, 3}, {2, 4}}))
+	println(word_search.Exist([][]byte{{'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}}, "ABCB"))
 }
 
 func main() {
