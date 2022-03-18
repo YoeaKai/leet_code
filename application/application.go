@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/word_search"
+	"github.com/YoeaKai/leet_code/topic/find_median_from_data_stream"
 )
 
 func run() {
-	println(word_search.Exist([][]byte{{'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}}, "ABCB"))
+	find_median_from_data_stream.MedianTest()
 }
 
 func main() {
