@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/remove_duplicates_from_sorted_array_II"
+	"github.com/YoeaKai/leet_code/topic/broken_calculator"
 )
 
 func run() {
-	println(remove_duplicates_from_sorted_array_II.RemoveDuplicates([]int{0, 0, 1, 1, 1, 1, 2, 2, 2, 3, 4}))
+	println(broken_calculator.BrokenCalc(5, 8))
 }
 
 func main() {
