@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/broken_calculator"
+	"github.com/YoeaKai/leet_code/topic/boats_to_save_people"
 )
 
 func run() {
-	println(broken_calculator.BrokenCalc(5, 8))
+	println(boats_to_save_people.NumRescueBoats([]int{1, 2}, 3))
 }
 
 func main() {
