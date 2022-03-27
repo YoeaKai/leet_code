@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/boats_to_save_people"
+	"github.com/YoeaKai/leet_code/topic/two_city_scheduling"
 )
 
 func run() {
-	println(boats_to_save_people.NumRescueBoats([]int{1, 2}, 3))
+	println(two_city_scheduling.TwoCitySchedCost([][]int{{10, 20}, {30, 200}, {400, 50}, {30, 20}}))
 }
 
 func main() {
