@@ -3,14 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/find_bottom_left_tree_value"
+	"github.com/YoeaKai/leet_code/topic/edit_distance"
 )
 
 func run() {
-	a := find_bottom_left_tree_value.TreeNode{Val: 1}
-	b := find_bottom_left_tree_value.TreeNode{Val: 3}
-	c := find_bottom_left_tree_value.TreeNode{Val: 2, Left: &a, Right: &b}
-	println(find_bottom_left_tree_value.FindBottomLeftValue(&c))
+	println(edit_distance.MinDistance("horse", "ros"))
 }
 
 func main() {
