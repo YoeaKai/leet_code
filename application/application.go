@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/edit_distance"
+	"github.com/YoeaKai/leet_code/topic/longest_common_subsequence"
 )
 
 func run() {
-	println(edit_distance.MinDistance("horse", "ros"))
+	println(longest_common_subsequence.LongestCommonSubsequence("bcbbd", "abcbad"))
 }
 
 func main() {
