@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/search_in_rotated_sorted_array_II"
+	"github.com/YoeaKai/leet_code/topic/maximum_swap"
 )
 
 func run() {
-	println(search_in_rotated_sorted_array_II.Search([]int{2, 5, 6, 0, 0, 1, 2}, 1))
+	println(maximum_swap.MaximumSwap(71013))
 }
 
 func main() {
