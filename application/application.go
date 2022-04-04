@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/brick_wall"
+	"github.com/YoeaKai/leet_code/topic/kth_smallest_number_in_multiplication_table"
 )
 
 func run() {
-	println(brick_wall.LeastBricks([][]int{{100000000}, {100000000}, {100000000}}))
+	println(kth_smallest_number_in_multiplication_table.FindKthNumber(3, 3, 5))
 }
 
 func main() {
