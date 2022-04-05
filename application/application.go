@@ -3,11 +3,16 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/kth_smallest_number_in_multiplication_table"
+	"github.com/YoeaKai/leet_code/topic/remove_duplicates_from_sorted_list"
 )
 
 func run() {
-	println(kth_smallest_number_in_multiplication_table.FindKthNumber(3, 3, 5))
+	e := remove_duplicates_from_sorted_list.ListNode{Val: 3, Next: nil}
+	d := remove_duplicates_from_sorted_list.ListNode{Val: 3, Next: &e}
+	c := remove_duplicates_from_sorted_list.ListNode{Val: 2, Next: &d}
+	b := remove_duplicates_from_sorted_list.ListNode{Val: 1, Next: &c}
+	a := remove_duplicates_from_sorted_list.ListNode{Val: 1, Next: &b}
+	println(remove_duplicates_from_sorted_list.DeleteDuplicates(&a))
 }
 
 func main() {
