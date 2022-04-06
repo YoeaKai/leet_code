@@ -23,5 +23,6 @@ func DeleteDuplicates(head *ListNode) *ListNode {
 			prev = prev.Next
 		}
 	}
+
 	return res.Next
 }
