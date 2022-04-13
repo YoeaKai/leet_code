@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/minimum_window_substring"
+	"github.com/YoeaKai/leet_code/topic/merge_sorted_array"
 )
 
 func run() {
-	println(minimum_window_substring.MinWindow("a", "a"))
+	merge_sorted_array.Merge([]int{0}, 0, []int{1}, 1)
 }
 
 func main() {
