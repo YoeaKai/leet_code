@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/merge_sorted_array"
+	"github.com/YoeaKai/leet_code/topic/partition_list"
 )
 
 func run() {
-	merge_sorted_array.Merge([]int{0}, 0, []int{1}, 1)
+	partition_list.Partition(nil, 1)
 }
 
 func main() {
