@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/gray_code"
+	"github.com/YoeaKai/leet_code/topic/maximum_product_of_word_lengths"
 )
 
 func run() {
-	println(gray_code.GrayCode(5))
+	println(maximum_product_of_word_lengths.MaxProduct([]string{"abcw", "baz", "foo", "bar", "xtfn", "abcdef"}))
 }
 
 func main() {
