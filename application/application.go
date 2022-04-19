@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/minimum_swaps_to_make_sequences_increasing"
+	"github.com/YoeaKai/leet_code/topic/zero_one_matrix"
 )
 
 func run() {
-	println(minimum_swaps_to_make_sequences_increasing.MinSwap([]int{0, 7, 8, 10, 10, 11, 12, 13, 19, 18}, []int{4, 4, 5, 7, 11, 14, 15, 16, 17, 20}))
+	println(zero_one_matrix.UpdateMatrix([][]int{{0, 1, 0, 1, 1}, {1, 1, 0, 0, 1}, {0, 0, 0, 1, 0}, {1, 0, 1, 1, 1}, {1, 0, 0, 0, 1}}))
 }
 
 func main() {
