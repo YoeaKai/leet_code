@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/zero_one_matrix"
+	"github.com/YoeaKai/leet_code/topic/minimum_time_difference"
 )
 
 func run() {
-	println(zero_one_matrix.UpdateMatrix([][]int{{0, 1, 0, 1, 1}, {1, 1, 0, 0, 1}, {0, 0, 0, 1, 0}, {1, 0, 1, 1, 1}, {1, 0, 0, 0, 1}}))
+	println(minimum_time_difference.FindMinDifference([]string{"00:00", "23:59", "00:00"}))
 }
 
 func main() {
