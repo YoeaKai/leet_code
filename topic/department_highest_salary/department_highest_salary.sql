@@ -6,6 +6,10 @@ FROM
 WHERE E.DepartmentId = D.Id 
   AND NOT EXISTS 
   (SELECT 1 FROM Employee B WHERE B.Salary > E.Salary AND E.DepartmentId = B.DepartmentId) 
+  /*
+  This is to check if there's at least a single salary in the employee table that is greater than the current employee's salary. 
+  If there's no such salary(NOT EXISTS) than it is printed.
+  */
 
 -- Method 2
 SELECT D.Name AS Department ,E.Name AS Employee ,E.Salary 
