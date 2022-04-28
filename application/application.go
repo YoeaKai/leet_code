@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/subsets_II"
+	"github.com/YoeaKai/leet_code/topic/decode_ways"
 )
 
 func run() {
-	println(subsets_II.SubsetsWithDup([]int{1, 2, 2}))
+	println(decode_ways.NumDecodings("226"))
 }
 
 func main() {
