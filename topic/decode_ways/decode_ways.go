@@ -1,19 +1,32 @@
 package decode_ways
 
 func NumDecodings(s string) int {
-	// pre := 2
-	res := 1
+	if s[0] == '0' {
+		return 0
+	}
 
-	// for i := 1; i < len(s); i++ {
-	// 	switch {
-	// 	case s[i] == '0':
-	// 		pre, res = res, pre
-	// 	case s[i-1] >= '3' || (s[i-1] == '2' && s[i] <= '6'):
-	// 		pre, res = res, pre+res
-	// 	default:
-	// 		pre, res = res, pre
-	// 	}
-	// }
+	pre := 1
+	cur := 1
 
-	return res
+	for i := 1; i < len(s); i++ {
+		if s[i-1] == '0' {
+			if s[i] == '0' { // Invalid
+				return 0
+			}
+			continue
+		}
+
+		if s[i] == '0' {
+			if s[i-1] > '2' { // Invalid
+				return 0
+			}
+			cur = pre
+		} else if (s[i-1] == '2' && s[i] > '6') || s[i-1] > '2' {
+			pre = cur
+		} else {
+			pre, cur = cur, pre+cur
+		}
+	}
+
+	return cur
 }

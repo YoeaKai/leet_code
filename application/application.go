@@ -7,7 +7,7 @@ import (
 )
 
 func run() {
-	println(decode_ways.NumDecodings("226"))
+	println(decode_ways.NumDecodings("1201234"))
 }
 
 func main() {
