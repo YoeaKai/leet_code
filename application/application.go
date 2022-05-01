@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/decode_ways"
+	"github.com/YoeaKai/leet_code/topic/scramble_string"
 )
 
 func run() {
-	println(decode_ways.NumDecodings("1201234"))
+	println(scramble_string.IsScramble("a", "a"))
 }
 
 func main() {
