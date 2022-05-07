@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/nonoverlapping_Intervals"
+	"github.com/YoeaKai/leet_code/topic/distinct_subsequences"
 )
 
 func run() {
-	println(nonoverlapping_Intervals.EraseOverlapIntervals([][]int{{1, 100}, {11, 22}, {1, 11}, {2, 12}}))
+	println(distinct_subsequences.NumDistinct("babgbag", "bag"))
 }
 
 func main() {
