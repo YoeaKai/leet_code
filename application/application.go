@@ -3,14 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/binary_tree_inorder_traversal"
+	"github.com/YoeaKai/leet_code/topic/restore_ip_addresses"
 )
 
 func run() {
-	c := binary_tree_inorder_traversal.TreeNode{Val: 3}
-	b := binary_tree_inorder_traversal.TreeNode{Val: 2, Left: &c}
-	a := binary_tree_inorder_traversal.TreeNode{Val: 1, Right: &b}
-	binary_tree_inorder_traversal.InorderTraversal(&a)
+	println(restore_ip_addresses.RestoreIpAddresses("25525511135"))
 }
 
 func main() {
