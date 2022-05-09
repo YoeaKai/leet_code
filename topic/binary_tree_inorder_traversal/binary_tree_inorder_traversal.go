@@ -6,7 +6,30 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
+// Method 1
 func InorderTraversal(root *TreeNode) (res []int) {
+	var stack []*TreeNode
+
+	for root != nil || len(stack) > 0 {
+		// push
+		for root != nil {
+			stack = append(stack, root)
+			root = root.Left
+		}
+
+		// pop
+		root = stack[len(stack)-1]
+		stack = stack[:len(stack)-1]
+
+		res = append(res, root.Val)
+		root = root.Right
+	}
+
+	return res
+}
+
+// Method 2
+func InorderTraversal2(root *TreeNode) (res []int) {
 	dfs(&res, root)
 	return res
 }
