@@ -3,13 +3,12 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/same_tree"
+	"github.com/YoeaKai/leet_code/topic/interleaving_string"
 )
 
 func run() {
-	b := same_tree.TreeNode{Val: 1}
-	a := same_tree.TreeNode{Val: 1}
-	println(same_tree.IsSameTree(&a, &b))
+	// println(interleaving_string.IsInterleave("a", "", "c"))
+	println(interleaving_string.IsInterleave("ab", "bc", "babc"))
 }
 
 func main() {
