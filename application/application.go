@@ -3,11 +3,12 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/continuous_subarray_sum"
+	"github.com/YoeaKai/leet_code/topic/symmetric_tree"
 )
 
 func run() {
-	println(continuous_subarray_sum.CheckSubarraySum([]int{23, 2, 4, 6, 6}, 7))
+	// println(make_array_strictly_increasing.MakeArrayIncreasing([]int{1, 5, 3, 6, 7}, []int{4, 3, 1}))
+	println(symmetric_tree.IsSymmetric(nil))
 }
 
 func main() {
