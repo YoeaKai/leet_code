@@ -3,17 +3,16 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/deepest_leaves_sum"
+	"github.com/YoeaKai/leet_code/topic/maximum_depth_of_binary_tree"
 )
 
 func run() {
-	// println(make_array_strictly_increasing.MakeArrayIncreasing([]int{1, 5, 3, 6, 7}, []int{4, 3, 1}))
-	e := deepest_leaves_sum.TreeNode{Val: 5}
-	d := deepest_leaves_sum.TreeNode{Val: 2}
-	c := deepest_leaves_sum.TreeNode{Val: 4, Left: &d}
-	b := deepest_leaves_sum.TreeNode{Val: 1, Right: &e}
-	a := deepest_leaves_sum.TreeNode{Val: 3, Left: &b, Right: &c}
-	deepest_leaves_sum.DeepestLeavesSum(&a)
+	e := maximum_depth_of_binary_tree.TreeNode{Val: 5}
+	d := maximum_depth_of_binary_tree.TreeNode{Val: 2}
+	c := maximum_depth_of_binary_tree.TreeNode{Val: 4, Left: &d}
+	b := maximum_depth_of_binary_tree.TreeNode{Val: 1, Right: &e}
+	a := maximum_depth_of_binary_tree.TreeNode{Val: 3, Left: &b, Right: &c}
+	println(maximum_depth_of_binary_tree.MaxDepth(&a))
 }
 
 func main() {

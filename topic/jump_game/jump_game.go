@@ -1,12 +1,5 @@
 package jump_game
 
-func max(x, y int) int {
-	if x > y {
-		return x
-	}
-	return y
-}
-
 func CanJump(nums []int) bool {
 	idx, reach := 0, 0
 	for reach < len(nums) && idx <= reach {
@@ -14,4 +7,11 @@ func CanJump(nums []int) bool {
 		idx++
 	}
 	return reach >= len(nums)-1
+}
+
+func max(x, y int) int {
+	if x > y {
+		return x
+	}
+	return y
 }
