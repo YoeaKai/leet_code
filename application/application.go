@@ -3,16 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/maximum_depth_of_binary_tree"
+	"github.com/YoeaKai/leet_code/topic/best_time_to_buy_and_sell_stock_III"
 )
 
 func run() {
-	e := maximum_depth_of_binary_tree.TreeNode{Val: 5}
-	d := maximum_depth_of_binary_tree.TreeNode{Val: 2}
-	c := maximum_depth_of_binary_tree.TreeNode{Val: 4, Left: &d}
-	b := maximum_depth_of_binary_tree.TreeNode{Val: 1, Right: &e}
-	a := maximum_depth_of_binary_tree.TreeNode{Val: 3, Left: &b, Right: &c}
-	println(maximum_depth_of_binary_tree.MaxDepth(&a))
+	println(best_time_to_buy_and_sell_stock_III.MaxProfit([]int{3, 3, 5, 0, 0, 3, 1, 4}))
 }
 
 func main() {
