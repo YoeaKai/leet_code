@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/best_time_to_buy_and_sell_stock_III"
+	"github.com/YoeaKai/leet_code/topic/target_sum"
 )
 
 func run() {
-	println(best_time_to_buy_and_sell_stock_III.MaxProfit([]int{3, 3, 5, 0, 0, 3, 1, 4}))
+	println(target_sum.FindTargetSumWays([]int{5, 4, 3, 2, 1}, 5))
 }
 
 func main() {
