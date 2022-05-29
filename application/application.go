@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/target_sum"
+	"github.com/YoeaKai/leet_code/topic/contiguous_array"
 )
 
 func run() {
-	println(target_sum.FindTargetSumWays([]int{5, 4, 3, 2, 1}, 5))
+	println(contiguous_array.FindMaxLength([]int{0, 1, 1, 0, 1, 1, 1, 0}))
 }
 
 func main() {
