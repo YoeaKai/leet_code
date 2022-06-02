@@ -3,11 +3,12 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/make_array_strictly_increasing"
+	"github.com/YoeaKai/leet_code/topic/partition_equal_subset_sum"
 )
 
 func run() {
-	println(make_array_strictly_increasing.MakeArrayIncreasing([]int{1, 5, 3, 6, 7}, []int{1, 3, 2, 4}))
+	// println(partition_equal_subset_sum.CanPartition([]int{3, 3, 3, 4, 5}))
+	println(partition_equal_subset_sum.CanPartition([]int{2, 2, 3, 5}))
 }
 
 func main() {
