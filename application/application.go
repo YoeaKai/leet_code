@@ -7,8 +7,7 @@ import (
 )
 
 func run() {
-	// println(partition_equal_subset_sum.CanPartition([]int{3, 3, 3, 4, 5}))
-	println(partition_equal_subset_sum.CanPartition([]int{2, 2, 3, 5}))
+	println(partition_equal_subset_sum.CanPartition([]int{1, 3, 5, 5, 5, 5}))
 }
 
 func main() {

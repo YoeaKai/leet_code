@@ -21,21 +21,25 @@ func CanPartition(nums []int) bool {
 	p[nums[0]] = true
 
 	for i := 1; i < len(nums); i++ {
-		tmp := p
+		tmp := []int{}
 
 		for key, _ := range p {
-			if key+nums[i] == sum {
+			added := key + nums[i]
+
+			if added == sum {
 				return true
 			}
 
-			_, ok := tmp[key+nums[i]]
+			_, ok := p[added]
 
-			if !ok {
-				tmp[key+nums[i]] = true
+			if !ok && added < sum {
+				tmp = append(tmp, added)
 			}
 		}
 
-		p = tmp
+		for _, val := range tmp {
+			p[val] = true
+		}
 	}
 
 	return false
