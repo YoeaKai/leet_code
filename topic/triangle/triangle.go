@@ -1,5 +1,6 @@
 package triangle
 
+// Method 1
 func MinimumTotal(triangle [][]int) int {
 	minlen := triangle[len(triangle)-1]
 
@@ -13,6 +14,7 @@ func MinimumTotal(triangle [][]int) int {
 	return minlen[0]
 }
 
+// Method 2
 func MinimumTotal2(triangle [][]int) int {
 	dp := make([]int, len(triangle)) // The min value in i-th level and j-th num
 	dp[0] = triangle[0][0]

@@ -7,6 +7,9 @@ const MaxInt = int(MaxUint >> 1)
 
 func MakeArrayIncreasing(arr1 []int, arr2 []int) int {
 	sort.Ints(arr2)
+
+	// First element is the number we choose for current position.
+	// Second element is how many times we change the number.
 	dp := make(map[int]int)
 	dp[-1] = 0
 
@@ -28,7 +31,7 @@ func MakeArrayIncreasing(arr1 []int, arr2 []int) int {
 
 			i := binarySearch(&arr2, key)
 
-			if i != len(arr2) {
+			if i != len(arr2) { // Remove the possibility that is not feasible.
 				var lastCount int
 
 				if t, ok := tmp[arr2[i]]; ok {
