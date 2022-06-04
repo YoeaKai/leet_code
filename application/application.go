@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/partition_equal_subset_sum"
+	"github.com/YoeaKai/leet_code/topic/triangle"
 )
 
 func run() {
-	println(partition_equal_subset_sum.CanPartition([]int{1, 3, 5, 5, 5, 5}))
+	println(triangle.MinimumTotal([][]int{{2}, {3, 4}, {6, 5, 7}, {4, 1, 8, 3}}))
 }
 
 func main() {
