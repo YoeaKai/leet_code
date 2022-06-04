@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/make_array_strictly_increasing"
+	"github.com/YoeaKai/leet_code/topic/expression_add_operators"
 )
 
 func run() {
-	println(make_array_strictly_increasing.MakeArrayIncreasing([]int{1, 5, 3, 6, 7}, []int{1, 3, 2, 4}))
+	println(expression_add_operators.AddOperators("123", 6))
 }
 
 func main() {
