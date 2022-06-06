@@ -7,7 +7,7 @@ import (
 )
 
 func run() {
-	println(count_primes.CountPrimes(100))
+	println(count_primes.CountPrimes(9))
 }
 
 func main() {
