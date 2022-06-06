@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/count_primes"
+	"github.com/YoeaKai/leet_code/topic/prime_arrangements"
 )
 
 func run() {
-	println(count_primes.CountPrimes(9))
+	println(prime_arrangements.NumPrimeArrangements(100))
 }
 
 func main() {
