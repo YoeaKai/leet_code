@@ -1,8 +1,10 @@
 #include <iostream>
-#include "../topic/prime_arrangements/cpp/prime_arrangements.cpp"
+#include <vector>
+#include "../topic/convert_sorted_array_to_binary_search_tree/convert_sorted_array_to_binary_search_tree.cpp"
 using namespace std;
 
 int main() {
     Solution s;
-    cout << s.numPrimeArrangements(5) << endl;
+    vector<int> p = {-10,-3,0,5,9};
+    cout << s.sortedArrayToBST(p) << endl;
 }
