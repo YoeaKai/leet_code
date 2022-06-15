@@ -17,3 +17,6 @@
 # MacOs .DS_Store
 .DS_Store
 */.DS_Store 
+
+# .vscode config
+.vscode/*

@@ -1,3 +1,5 @@
+#include <vector>
+
 struct TreeNode {
     int val;
     TreeNode *left;
@@ -10,11 +12,12 @@ struct TreeNode {
 class Solution {
 public:
     TreeNode* sortedArrayToBST(std::vector<int>& nums) {
-        int len = nums.size()
-        if (len == 1){
-            return new TreeNode(nums[0]);
-        }
+        int len = nums.size();
+        // if (len == 1){
+        //     return new TreeNode(nums[0]);
+        // }
         
-        return TreeNode(nums[len/2] sortedArrayToBST())
+        // return TreeNode(nums[len/2] sortedArrayToBST())
+        return NULL;
     }
 };
