@@ -10,9 +10,11 @@ struct TreeNode {
 class Solution {
 public:
     TreeNode* sortedArrayToBST(std::vector<int>& nums) {
-        if (nums.size() == 1){
+        int len = nums.size()
+        if (len == 1){
             return new TreeNode(nums[0]);
         }
-        return NULL;
+        
+        return TreeNode(nums[len/2] sortedArrayToBST())
     }
 };
