@@ -14,9 +14,13 @@
 # Dependency directories (remove the comment below to include it)
 # vendor/
 
-# MacOs .DS_Store
+# macOS .DS_Store
 .DS_Store
 */.DS_Store 
 
 # .vscode config
 .vscode/
+
+# macOS C++ application
+application/cpp/application
+application/cpp/application.dSYM
