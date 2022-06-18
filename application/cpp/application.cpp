@@ -1,14 +1,16 @@
 #include <iostream>
 #include <vector>
-#include "../../topic/jump_game_VI/jump_game_VI.cpp"
+#include "../../topic/binary_tree_level_order_traversal_II/binary_tree_level_order_traversal_II.cpp"
 using namespace std;
 
 int main()
 {
     Solution s;
-    vector<int> strs = {10, -5, -2, 4, 0, 3};
+    TreeNode c = TreeNode(20);
+    TreeNode b = TreeNode(9);
+    TreeNode a = TreeNode(3, &b, &c);
 
     cout << "------start------" << endl;
-    cout << s.maxResult(strs, 3) << endl;
+    vector<vector<int> > ans = s.levelOrderBottom(&a);
     cout << "------over------" << endl;
 }
