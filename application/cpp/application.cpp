@@ -1,16 +1,13 @@
 #include <iostream>
 #include <vector>
-#include "../../topic/smallest_string_starting_from_leaf/smallest_string_starting_from_leaf.cpp"
+#include "../../topic/number_of_dice_rolls_with_target_sum/number_of_dice_rolls_with_target_sum.cpp"
 using namespace std;
 
 int main()
 {
     Solution s;
-    TreeNode c = TreeNode(2);
-    TreeNode b = TreeNode(2);
-    TreeNode a = TreeNode(1, &b, &b);
 
     cout << "------start------" << endl;
-    cout << s.smallestFromLeaf(&a) << endl;
+    cout << s.numRollsToTarget(4, 3, 10) << endl;
     cout << "------over------" << endl;
 }
