@@ -1,13 +1,16 @@
 #include <iostream>
 #include <vector>
-#include "../../topic/delete_operation_for_two_strings/delete_operation_for_two_strings.cpp"
+#include "../../topic/find_mode_in_binary_search_tree/find_mode_in_binary_search_tree.cpp"
 using namespace std;
 
 int main()
 {
     Solution s;
+    TreeNode c = TreeNode(2);
+    TreeNode b = TreeNode(2, &c, nullptr);
+    TreeNode a = TreeNode(1, nullptr, &b);
 
     cout << "------start------" << endl;
-    cout << s.minDistance("leetcode", "etco") << endl;
+    vector<int> ans = s.findMode(&a);
     cout << "------over------" << endl;
 }
