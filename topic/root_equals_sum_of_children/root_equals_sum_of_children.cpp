@@ -13,6 +13,12 @@ class Solution
 public:
 	bool checkTree(TreeNode *root)
 	{
-		return true;
+		// 0ms
+		if (root->left->val + root->right->val == root->val)
+			return true;
+		return false;
+
+		// 7~11ms
+		// return root->left->val + root->right->val == root->val;
 	}
 };
