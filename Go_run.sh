@@ -1,3 +1,3 @@
 #!/bin/bash
 
-go run application/application.go
+go run application/go/application.go

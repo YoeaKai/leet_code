@@ -1,18 +1,18 @@
 # leet_code
 Practice code of leetcode.
 
-Setting :
+Golang Setting :
 1. "go.gopath": "/Users/<userName>/go",
 2. path: github.com/YoeaKai/leet_code/
 
 ---
 
-Run application:
+Run Golang application:
 ```
-sh run.sh
+sh go_run.sh
 ```
   
 Run benchmark:
 ```
-sh benchmark.sh
+sh go_benchmark.sh
 ```
