@@ -5,6 +5,7 @@ using namespace std;
 class Solution
 {
 public:
+	// hash map
 	int minSumOfLengths(vector<int> &arr, int target)
 	{
 		int ret = INT_MAX, dis = INT_MAX, sum = 0;
@@ -33,5 +34,34 @@ public:
 		}
 
 		return ret == INT_MAX ? -1 : ret;
+	}
+
+	// sliding window, faster
+	int minSumOfLengths2(vector<int> &arr, int target)
+	{
+		const int N = arr.size(), INF = 1e9;
+		vector<int> dp(N, INF);
+		int sum = 0, ret = INF;
+
+		for (int hi = 0, lo = 0; hi < N; hi++)
+		{
+			sum += arr[hi];
+
+			while (sum > target)
+				sum -= arr[lo++];
+
+			if (sum == target)
+			{
+				int len = hi - lo + 1;
+				dp[hi] = len;
+				if (lo > 0)
+					ret = min(ret, len + dp[lo - 1]);
+			}
+
+			if (hi > 0)
+				dp[hi] = min(dp[hi], dp[hi - 1]);
+		}
+
+		return ret == INF ? -1 : ret;
 	}
 };

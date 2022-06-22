@@ -6,9 +6,9 @@ using namespace std;
 int main()
 {
     Solution s;
-    vector<int> v = {1, 3, 1};
+    vector<int> v = {3, 2, 2, 4, 3};
 
     cout << "------start------" << endl;
-    cout << s.minSumOfLengths(v, 4) << endl;
+    cout << s.minSumOfLengths2(v, 3) << endl;
     cout << "------over------" << endl;
 }
