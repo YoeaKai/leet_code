@@ -1,14 +1,14 @@
 #include <iostream>
 #include <vector>
-#include "../../topic/longest_consecutive_sequence/longest_consecutive_sequence.cpp"
+#include "../../topic/minimum_time_to_finish_the_race/minimum_time_to_finish_the_race.cpp"
 using namespace std;
 
 int main()
 {
     Solution s;
-    vector<int> a = vector<int>{9};
+    vector<vector<int> > a = vector<vector<int> >{{1, 10}, {2, 2}, {3, 4}};
 
     cout << "------start------" << endl;
-    cout << s.longestConsecutive(a) << endl;
+    cout << s.minimumFinishTime(a, 6, 5) << endl;
     cout << "------over------" << endl;
 }
