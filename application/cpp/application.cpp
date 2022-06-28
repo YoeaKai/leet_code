@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "../../topic/partitioning_into_minimum_number_of_deci_binary_numbers/partitioning_into_minimum_number_of_deci_binary_numbers.cpp"
+#include "../../topic/minimum_deletions_to_make_character_frequencies_unique/minimum_deletions_to_make_character_frequencies_unique.cpp"
 using namespace std;
 
 int main()
@@ -8,6 +8,6 @@ int main()
     Solution s;
 
     cout << "------start------" << endl;
-    cout << s.minPartitions("12321") << endl;
+    cout << s.minDeletions("bbcebab") << endl;
     cout << "------over------" << endl;
 }
