@@ -1,15 +1,14 @@
 #include <iostream>
 #include <vector>
-#include "../../topic/maximum_area_of_a_piece_of_cake_after_horizontal_and_vertical_cuts/maximum_area_of_a_piece_of_cake_after_horizontal_and_vertical_cuts.cpp"
+#include "../../topic/minimize_the_difference_between_target_and_chosen_elements/minimize_the_difference_between_target_and_chosen_elements.cpp"
 using namespace std;
 
 int main()
 {
     Solution s;
-    vector<int> a = {2};
-    vector<int> b = {2};
+    vector<vector<int> > a = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
 
     cout << "------start------" << endl;
-    cout << s.maxArea(1000000000, 1000000000, a, b) << endl;
+    cout << s.minimizeTheDifference(a, 13) << endl;
     cout << "------over------" << endl;
 }
