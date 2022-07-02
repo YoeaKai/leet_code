@@ -1,15 +1,15 @@
 #include <iostream>
 #include <vector>
-#include "../../topic/queue_reconstruction_by_height/queue_reconstruction_by_height.cpp"
+#include "../../topic/maximum_area_of_a_piece_of_cake_after_horizontal_and_vertical_cuts/maximum_area_of_a_piece_of_cake_after_horizontal_and_vertical_cuts.cpp"
 using namespace std;
 
 int main()
 {
     Solution s;
-    vector<vector<int> > a = {{7, 0}, {4, 4}, {7, 1}, {5, 0}, {6, 1}, {5, 2}};
+    vector<int> a = {2};
+    vector<int> b = {2};
 
     cout << "------start------" << endl;
-    a = s.reconstructQueue(a);
-    // cout << s.reconstructQueue(&a) << endl;
+    cout << s.maxArea(1000000000, 1000000000, a, b) << endl;
     cout << "------over------" << endl;
 }
