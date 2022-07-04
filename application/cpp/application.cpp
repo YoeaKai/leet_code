@@ -1,14 +1,14 @@
 #include <iostream>
 #include <vector>
-#include "../../topic/minimize_the_difference_between_target_and_chosen_elements/minimize_the_difference_between_target_and_chosen_elements.cpp"
+#include "../../topic/wiggle_subsequence/wiggle_subsequence.cpp"
 using namespace std;
 
 int main()
 {
     Solution s;
-    vector<vector<int> > a = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+    vector<int> a = {1, 7, 4, 9, 2, 5};
 
     cout << "------start------" << endl;
-    cout << s.minimizeTheDifference(a, 13) << endl;
+    cout << s.wiggleMaxLength(a) << endl;
     cout << "------over------" << endl;
 }
