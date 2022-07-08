@@ -1,14 +1,14 @@
 #include <iostream>
 #include <vector>
-#include "../../topic/maximum_points_you_can_obtain_from_cards/maximum_points_you_can_obtain_from_cards.cpp"
+#include "../../topic/longest_increasing_subsequence/longest_increasing_subsequence.cpp"
 using namespace std;
 
 int main()
 {
     Solution s;
-    vector<int> a = {1, 2, 3, 4, 5, 6, 1};
+    vector<int> a = {0, 1, -1, 3, 2, 3};
 
     cout << "------start------" << endl;
-    cout << s.maxScore(a, 3) << endl;
+    cout << s.lengthOfLIS(a) << endl;
     cout << "------over------" << endl;
 }
