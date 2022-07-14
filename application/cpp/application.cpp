@@ -1,14 +1,15 @@
 #include <iostream>
 #include <vector>
-#include "../../topic/best_time_to_buy_and_sell_stock_with_cooldown/best_time_to_buy_and_sell_stock_with_cooldown.cpp"
+#include "../../topic/construct_binary_tree_from_preorder_and_inorder_traversal/cpp/construct_binary_tree_from_preorder_and_inorder_traversal.cpp"
 using namespace std;
 
 int main()
 {
     Solution s;
-    vector<int> a = {1, 2, 3, 0, 2};
+    vector<int> pre = {3, 9, 20, 15, 7};
+    vector<int> in = {9, 3, 15, 20, 7};
 
     cout << "------start------" << endl;
-    cout << s.maxProfit(a) << endl;
+    cout << s.buildTree(pre, in) << endl;
     cout << "------over------" << endl;
 }
