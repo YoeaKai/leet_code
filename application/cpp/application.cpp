@@ -1,14 +1,14 @@
 #include <iostream>
 #include <vector>
-#include "../../topic/max_area_of_island/max_area_of_island.cpp"
+#include "../../topic/find_the_town_judge/find_the_town_judge.cpp"
 using namespace std;
 
 int main()
 {
     Solution s;
-    vector<vector<int> > a = {{0, 0}};
+    vector<vector<int> > a = {{1, 2}};
 
     cout << "------start------" << endl;
-    cout << s.maxAreaOfIsland(a) << endl;
+    cout << s.findJudge(2, a) << endl;
     cout << "------over------" << endl;
 }
