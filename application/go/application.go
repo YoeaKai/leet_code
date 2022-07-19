@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/prime_arrangements"
+	"github.com/YoeaKai/leet_code/topic/pascals_triangle"
 )
 
 func run() {
-	println(prime_arrangements.NumPrimeArrangements(100))
+	println(pascals_triangle.Generate(10))
 }
 
 func main() {
