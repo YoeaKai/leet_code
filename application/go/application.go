@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/pascals_triangle"
+	"github.com/YoeaKai/leet_code/topic/number_of_matching_subsequences"
 )
 
 func run() {
-	println(pascals_triangle.Generate(10))
+	println(number_of_matching_subsequences.NumMatchingSubseq("abcde", []string{"a", "bb", "acd", "ace"}))
 }
 
 func main() {
