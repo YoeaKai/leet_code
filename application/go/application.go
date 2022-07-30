@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/pascals_triangle_II"
+	"github.com/YoeaKai/leet_code/topic/word_subsets"
 )
 
 func run() {
-	println(pascals_triangle_II.GetRow(10))
+	println(word_subsets.WordSubsets([]string{"amazon", "apple", "facebook", "google", "leetcode"}, []string{"e", "o"}))
 }
 
 func main() {
