@@ -12,8 +12,8 @@ func FindAndReplacePattern(words []string, pattern string) (result []string) {
 	return result
 }
 
-func replacePattern(word string) [24]int {
-	pattern, replaced := [24]int{}, make(map[rune]int)
+func replacePattern(word string) [50]int {
+	pattern, replaced := [50]int{}, make(map[rune]int)
 
 	for i, c := range word {
 		if _, ok := replaced[c]; !ok {
@@ -24,28 +24,3 @@ func replacePattern(word string) [24]int {
 
 	return pattern
 }
-
-// func FindAndReplacePattern(words []string, pattern string) (result []string) {
-// 	for _, word := range words {
-// 		if replacePattern(pattern) == replacePattern(word) {
-// 			result = append(result, word)
-// 		}
-// 	}
-// 	return result
-// }
-
-// func replacePattern(word string) string {
-// 	replace := make(map[rune]int)
-
-// 	for _, c := range word {
-// 		if _, ok := replace[c]; !ok {
-// 			replace[c] = len(replace)
-// 		}
-// 	}
-
-// 	for i := 0; i < len(word); i++ {
-// 		word[i] = replace[word[i]] + 'a'
-// 	}
-
-// 	return word
-// }
