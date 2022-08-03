@@ -3,11 +3,13 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/word_subsets"
+	"github.com/YoeaKai/leet_code/topic/my_calendar_I"
 )
 
 func run() {
-	println(word_subsets.WordSubsets([]string{"amazon", "apple", "facebook", "google", "leetcode"}, []string{"e", "o"}))
+	obj := my_calendar_I.Constructor()
+	param_1 := obj.Book(10, 20)
+	println(param_1)
 }
 
 func main() {
