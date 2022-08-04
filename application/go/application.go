@@ -3,13 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/my_calendar_I"
+	"github.com/YoeaKai/leet_code/topic/mirror_reflection"
 )
 
 func run() {
-	obj := my_calendar_I.Constructor()
-	param_1 := obj.Book(10, 20)
-	println(param_1)
+	println(mirror_reflection.MirrorReflection(2, 1))
 }
 
 func main() {
