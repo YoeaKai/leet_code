@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/mirror_reflection"
+	"github.com/YoeaKai/leet_code/topic/number_of_islands"
 )
 
 func run() {
-	println(mirror_reflection.MirrorReflection(2, 1))
+	println(number_of_islands.NumIslands([][]byte{{'1', '1', '1', '1', '0'}, {'1', '1', '0', '1', '0'}, {'1', '1', '0', '0', '0'}, {'0', '0', '0', '0', '0'}}))
 }
 
 func main() {
