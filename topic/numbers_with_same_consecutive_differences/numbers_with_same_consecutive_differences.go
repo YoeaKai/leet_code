@@ -7,14 +7,14 @@ func NumsSameConsecDiff(n int, k int) []int {
 		var cur []int
 
 		for _, val := range result {
-			tmp := val % 10
+			digit := val % 10
 
-			if tmp+k < 10 {
-				cur = append(cur, val*10+tmp+k)
+			if digit+k < 10 {
+				cur = append(cur, val*10+digit+k)
 			}
 
-			if k > 0 && tmp-k >= 0 {
-				cur = append(cur, val*10+tmp-k)
+			if k > 0 && digit-k >= 0 {
+				cur = append(cur, val*10+digit-k)
 			}
 		}
 
