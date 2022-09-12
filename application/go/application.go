@@ -3,13 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/pacific_atlantic_water_flow"
+	"github.com/YoeaKai/leet_code/topic/bag_of_tokens"
 )
 
 func run() {
-	println(pacific_atlantic_water_flow.PacificAtlantic(
-		[][]int{{1, 2, 2, 3, 5}, {3, 2, 3, 4, 4}, {2, 4, 5, 3, 1}, {6, 7, 1, 4, 5}, {5, 1, 1, 2, 4}},
-	))
+	println(bag_of_tokens.BagOfTokensScore([]int{71, 55, 82}, 54))
 }
 
 func main() {
