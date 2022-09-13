@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/bag_of_tokens"
+	"github.com/YoeaKai/leet_code/topic/utf_8_validation"
 )
 
 func run() {
-	println(bag_of_tokens.BagOfTokensScore([]int{71, 55, 82}, 54))
+	println(utf_8_validation.ValidUtf8([]int{197, 130, 1}))
 }
 
 func main() {
