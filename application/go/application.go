@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/concatenation_of_consecutive_binary_numbers"
+	"github.com/YoeaKai/leet_code/topic/contains_duplicate_II"
 )
 
 func run() {
-	println(concatenation_of_consecutive_binary_numbers.ConcatenatedBinary(10))
+	println(contains_duplicate_II.ContainsNearbyDuplicate([]int{1, 0, 1, 1}, 1))
 }
 
 func main() {
