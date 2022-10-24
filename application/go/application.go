@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/maximum_length_of_a_concatenated_string_with_unique_characters"
+	"github.com/YoeaKai/leet_code/topic/interview_MT_2022_10"
 )
 
 func run() {
-	println(maximum_length_of_a_concatenated_string_with_unique_characters.MaxLength([]string{
+	println(interview_MT_2022_10.Q3([]string{
 		".##.#",
 		"#.#..",
 		"#...#",
