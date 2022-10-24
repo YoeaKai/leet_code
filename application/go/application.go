@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/contains_duplicate_II"
+	"github.com/YoeaKai/leet_code/topic/maximum_length_of_a_concatenated_string_with_unique_characters"
 )
 
 func run() {
-	println(contains_duplicate_II.ContainsNearbyDuplicate([]int{1, 0, 1, 1}, 1))
+	println(maximum_length_of_a_concatenated_string_with_unique_characters.MaxLength([]string{"un", "iq", "ue"}))
 }
 
 func main() {
