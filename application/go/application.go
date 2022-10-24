@@ -7,7 +7,12 @@ import (
 )
 
 func run() {
-	println(maximum_length_of_a_concatenated_string_with_unique_characters.MaxLength([]string{"un", "iq", "ue"}))
+	println(maximum_length_of_a_concatenated_string_with_unique_characters.MaxLength([]string{
+		".##.#",
+		"#.#..",
+		"#...#",
+		"#.##.",
+	}))
 }
 
 func main() {
