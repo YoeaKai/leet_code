@@ -3,16 +3,21 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/interview_MT_2022_10"
+	"github.com/YoeaKai/leet_code/topic/image_overlap"
 )
 
 func run() {
-	println(interview_MT_2022_10.Q3([]string{
-		".##.#",
-		"#.#..",
-		"#...#",
-		"#.##.",
-	}))
+	println(image_overlap.LargestOverlap(
+		[][]int{
+			{1, 1, 0},
+			{0, 1, 0},
+			{0, 1, 0},
+		},
+		[][]int{
+			{0, 0, 0},
+			{0, 1, 1},
+			{0, 0, 1},
+		}))
 }
 
 func main() {
