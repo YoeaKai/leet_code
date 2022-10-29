@@ -3,11 +3,14 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/interview_SNLG_2022_10"
+	"github.com/YoeaKai/leet_code/topic/earliest_possible_day_of_full_bloom"
 )
 
 func run() {
-	println(interview_SNLG_2022_10.Q1([]int{2, 3, 1, 1, 4}))
+	println(earliest_possible_day_of_full_bloom.EarliestFullBloom(
+		[]int{1, 4, 3},
+		[]int{2, 3, 1},
+	))
 }
 
 func main() {
