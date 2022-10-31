@@ -3,13 +3,15 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/earliest_possible_day_of_full_bloom"
+	"github.com/YoeaKai/leet_code/topic/toeplitz_matrix"
 )
 
 func run() {
-	println(earliest_possible_day_of_full_bloom.EarliestFullBloom(
-		[]int{1, 4, 3},
-		[]int{2, 3, 1},
+	println(toeplitz_matrix.IsToeplitzMatrix(
+		[][]int{{1, 2, 3, 4}, {5, 1, 2, 3}, {9, 5, 1, 2}},
+	))
+	println(toeplitz_matrix.IsToeplitzMatrix(
+		[][]int{{18}, {66}},
 	))
 }
 
