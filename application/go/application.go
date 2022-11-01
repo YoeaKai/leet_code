@@ -3,15 +3,16 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/toeplitz_matrix"
+	"github.com/YoeaKai/leet_code/topic/where_will_the_ball_fall"
 )
 
 func run() {
-	println(toeplitz_matrix.IsToeplitzMatrix(
-		[][]int{{1, 2, 3, 4}, {5, 1, 2, 3}, {9, 5, 1, 2}},
-	))
-	println(toeplitz_matrix.IsToeplitzMatrix(
-		[][]int{{18}, {66}},
+	println(where_will_the_ball_fall.FindBall(
+		[][]int{
+			{1, -1, -1, 1, -1, 1, 1, 1, 1},
+			{-1, 1, 1, 1, -1, -1, -1, -1, 1},
+			{1, -1, -1, -1, -1, 1, -1, 1, 1},
+		},
 	))
 }
 
