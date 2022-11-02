@@ -3,16 +3,14 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/where_will_the_ball_fall"
+	"github.com/YoeaKai/leet_code/topic/minimum_genetic_mutation"
 )
 
 func run() {
-	println(where_will_the_ball_fall.FindBall(
-		[][]int{
-			{1, -1, -1, 1, -1, 1, 1, 1, 1},
-			{-1, 1, 1, 1, -1, -1, -1, -1, 1},
-			{1, -1, -1, -1, -1, 1, -1, 1, 1},
-		},
+	println(minimum_genetic_mutation.MinMutation(
+		"AACCGGTT",
+		"AACCGGTA",
+		[]string{"AACCGGTA"},
 	))
 }
 
