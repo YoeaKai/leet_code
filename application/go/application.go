@@ -3,14 +3,12 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/minimum_genetic_mutation"
+	"github.com/YoeaKai/leet_code/topic/longest_palindrome_by_concatenating_two_letter_words"
 )
 
 func run() {
-	println(minimum_genetic_mutation.MinMutation(
-		"AACCGGTT",
-		"AACCGGTA",
-		[]string{"AACCGGTA"},
+	println(longest_palindrome_by_concatenating_two_letter_words.LongestPalindrome2(
+		[]string{"bb", "bb"},
 	))
 }
 
