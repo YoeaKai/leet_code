@@ -3,13 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/longest_palindrome_by_concatenating_two_letter_words"
+	"github.com/YoeaKai/leet_code/topic/reverse_vowels_of_a_string"
 )
 
 func run() {
-	println(longest_palindrome_by_concatenating_two_letter_words.LongestPalindrome2(
-		[]string{"bb", "bb"},
-	))
+	println(reverse_vowels_of_a_string.ReverseVowels("leetcode"))
 }
 
 func main() {
