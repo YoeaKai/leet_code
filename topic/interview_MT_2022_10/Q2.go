@@ -4,8 +4,33 @@
 
 package interview_MT_2022_10
 
+func Q2(A []int) (res int) {
+	numPos := make(map[int]int)
+	sum := make([]int, len(A))
+	numPos[A[0]] = 0
+	sum[0] = A[0]
+
+	for i := 1; i < len(A); i++ {
+		sum[i] = sum[i-1] + A[i]
+		if _, ok := numPos[A[i]]; ok {
+			res = max(res, sum[i]-sum[numPos[A[i]]]+A[i])
+		} else {
+			numPos[A[i]] = i
+		}
+	}
+
+	return res
+}
+
+func max(x, y int) int {
+	if x > y {
+		return x
+	}
+	return y
+}
+
 // Sliding window method
-func Q2(A []int) int {
+func Q2_2(A []int) int {
 	length := len(A)
 	nums := make(map[int]int)
 
