@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/reverse_vowels_of_a_string"
+	"github.com/YoeaKai/leet_code/topic/maximum_69_number"
 )
 
 func run() {
-	println(reverse_vowels_of_a_string.ReverseVowels("leetcode"))
+	println(maximum_69_number.Maximum69Number(9669))
 }
 
 func main() {
