@@ -3,11 +3,13 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/maximum_69_number"
+	"github.com/YoeaKai/leet_code/topic/interview_PixlS_2022_11"
 )
 
 func run() {
-	println(maximum_69_number.Maximum69Number(9669))
+	println(interview_PixlS_2022_11.Solution1(
+		[]string{"100", "110", "010", "011", "100"},
+	))
 }
 
 func main() {
