@@ -3,13 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/interview_PixlS_2022_11"
+	"github.com/YoeaKai/leet_code/topic/make_the_string_great"
 )
 
 func run() {
-	println(interview_PixlS_2022_11.Solution1(
-		[]string{"100", "110", "010", "011", "100"},
-	))
+	println(make_the_string_great.MakeGood("leEeetcode"))
 }
 
 func main() {
