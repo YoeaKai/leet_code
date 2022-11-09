@@ -1,14 +1,19 @@
-import orderly_queue
+package orderly_queue
+
+import (
+	"bytes"
+	"sort"
+)
 
 func OrderlyQueue(s string, k int) string {
-    str := []byte(s)
+	str := []byte(s)
 
-    if k > 1{
+	if k > 1 {
 		sort.Slice(str, func(i, j int) bool {
 			return str[i] < str[j]
 		})
 		return string(str)
-    }
+	}
 
 	min := []byte(s)
 
