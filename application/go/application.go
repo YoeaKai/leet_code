@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/make_the_string_great"
+	"github.com/YoeaKai/leet_code/topic/remove_all_adjacent_duplicates_in_string"
 )
 
 func run() {
-	println(make_the_string_great.MakeGood("leEeetcode"))
+	println(remove_all_adjacent_duplicates_in_string.RemoveDuplicates("abbaca"))
 }
 
 func main() {
