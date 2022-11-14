@@ -32,7 +32,7 @@ var pre2 *TreeNode
 
 func Flatten2(root *TreeNode) {
 	pre2 = nil
-	flattenTree(root)
+	flattenTree2(root)
 }
 
 func flattenTree2(root *TreeNode) {
@@ -40,8 +40,8 @@ func flattenTree2(root *TreeNode) {
 		return
 	}
 
-	flattenTree(root.Right)
-	flattenTree(root.Left)
+	flattenTree2(root.Right)
+	flattenTree2(root.Left)
 	root.Right = pre2
 	root.Left = nil
 	pre2 = root
