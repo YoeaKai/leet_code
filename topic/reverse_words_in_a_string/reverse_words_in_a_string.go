@@ -1,5 +1,7 @@
 package reverse_words_in_a_string
 
+import "strings"
+
 func ReverseWords(s string) string {
 	res := []string{}
 	idx := len(s) - 1
