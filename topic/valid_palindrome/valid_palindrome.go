@@ -1,5 +1,7 @@
 package valid_palindrome
 
+import "strings"
+
 func IsPalindrome(s string) bool {
 	front, back := 0, len(s)-1
 
@@ -14,7 +16,7 @@ func IsPalindrome(s string) bool {
 			continue
 		}
 
-		if strings.ToLower(string(s[front])) != strings.ToLower(string(s[back])) {
+		if !strings.EqualFold(string(s[front]), string(s[back])) {
 			return false
 		}
 
