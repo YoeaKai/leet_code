@@ -11,6 +11,18 @@ func RemoveStones(stones [][]int) int {
 	return len(stones) - islands
 }
 
+func union(x, y int, islands *int, m *map[int]int) {
+	x = find(x, islands, m)
+	y = find(y, islands, m)
+
+	// If there are different x and y found, that represents there are two different islands.
+	// They must be unioned due to x and y being one stone before being found.
+	if x != y {
+		(*m)[x] = y
+		*islands--
+	}
+}
+
 func find(x int, islands *int, m *map[int]int) int {
 	if _, ok := (*m)[x]; !ok {
 		(*m)[x] = x
@@ -22,14 +34,4 @@ func find(x int, islands *int, m *map[int]int) int {
 	}
 
 	return (*m)[x]
-}
-
-func union(x, y int, islands *int, m *map[int]int) {
-	x = find(x, islands, m)
-	y = find(y, islands, m)
-
-	if x != y {
-		(*m)[x] = y
-		*islands--
-	}
 }

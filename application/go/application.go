@@ -3,11 +3,13 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/remove_all_adjacent_duplicates_in_string"
+	"github.com/YoeaKai/leet_code/topic/most_stones_removed_with_same_row_or_column"
 )
 
 func run() {
-	println(remove_all_adjacent_duplicates_in_string.RemoveDuplicates("abbaca"))
+	println(most_stones_removed_with_same_row_or_column.RemoveStones(
+		[][]int{{0, 0}, {0, 1}, {1, 0}, {1, 2}, {2, 1}, {2, 2}},
+	))
 }
 
 func main() {
