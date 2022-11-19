@@ -13,6 +13,7 @@ func OuterTrees(trees [][]int) [][]int {
 	var lower [][2]int
 
 	for i := 0; i < len(trees); i++ {
+		// Turn tree into [2]int data type used to be the key of the set after.
 		tree := [2]int{trees[i][0], trees[i][1]}
 
 		for len(upper) >= 2 && compare(&upper[len(upper)-2], &upper[len(upper)-1], &tree) < 0 {
