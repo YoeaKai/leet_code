@@ -1,5 +1,7 @@
 package erect_the_fence
 
+import "sort"
+
 func OuterTrees(trees [][]int) [][]int {
 	sort.Slice(trees, func(a, b int) bool {
 		if trees[a][0] == trees[b][0] {
