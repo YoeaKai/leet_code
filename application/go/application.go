@@ -3,12 +3,13 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/most_stones_removed_with_same_row_or_column"
+	"github.com/YoeaKai/leet_code/topic/nearest_exit_from_entrance_in_maze"
 )
 
 func run() {
-	println(most_stones_removed_with_same_row_or_column.RemoveStones(
-		[][]int{{0, 0}, {0, 1}, {1, 0}, {1, 2}, {2, 1}, {2, 2}},
+	println(nearest_exit_from_entrance_in_maze.NearestExit(
+		[][]byte{{'+', '+', '+'}, {'.', '.', '.'}, {'+', '+', '+'}},
+		[]int{1, 0},
 	))
 }
 
