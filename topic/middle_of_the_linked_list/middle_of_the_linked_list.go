@@ -6,5 +6,13 @@ type ListNode struct {
 }
 
 func MiddleNode(head *ListNode) *ListNode {
-	return head
+	mid := head
+	tail := head
+
+	for tail != nil && tail.Next != nil {
+		mid = mid.Next
+		tail = tail.Next.Next
+	}
+
+	return mid
 }
