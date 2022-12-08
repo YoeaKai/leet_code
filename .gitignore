@@ -24,3 +24,6 @@
 # macOS C++ application
 application/cpp/application
 application/cpp/application.dSYM
+
+# Python
+*.py[cod]
