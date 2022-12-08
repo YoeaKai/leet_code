@@ -1,9 +1,12 @@
-from topic.two_sum.py.two_sum import Solution
+from topic.leaf_similar_trees.leaf_similar_trees import Solution
+from topic.leaf_similar_trees.leaf_similar_trees import TreeNode
 
 
 def run():
     solution = Solution()
-    print(solution.twoSum([2, 7, 11, 15], 9))
+    tree = TreeNode()
+    tree.val = 1
+    print(solution.leafSimilar(tree, tree))
 
 
 if __name__ == '__main__':
