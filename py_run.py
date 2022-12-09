@@ -10,7 +10,7 @@ def run():
     tree.val = 1
     tree.left = tree2
 
-    print(solution.maxAncestorDiff(tree, tree))
+    print(solution.maxAncestorDiff(tree))
 
 
 if __name__ == '__main__':
