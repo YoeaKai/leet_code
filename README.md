@@ -16,3 +16,8 @@ Run benchmark:
 ```
 sh go_benchmark.sh
 ```
+
+---
+
+Python run:
+python3 py_run.py
