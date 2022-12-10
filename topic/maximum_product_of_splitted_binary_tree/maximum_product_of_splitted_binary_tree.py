@@ -7,5 +7,19 @@ class TreeNode:
 		self.right = right
 
 class Solution:
+	def __init__(self) -> None:
+		self.res = 0
+		
 	def maxProduct(self, root: Optional[TreeNode]) -> int:
-		return 1
+		def dfs(root):
+			if not root:
+				return 0
+			left, right = dfs(root.left), dfs(root.right)
+			self.res = max(self.res, left * (valSum - left), right * (valSum - right))
+			return left + right + root.val
+
+		self.res = 0
+		valSum = 0
+		valSum = dfs(root)
+		dfs(root)
+		return self.res % (10**9 + 7)

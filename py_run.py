@@ -1,5 +1,5 @@
-from topic.maximum_difference_between_node_and_ancestor.maximum_difference_between_node_and_ancestor import Solution
-from topic.maximum_difference_between_node_and_ancestor.maximum_difference_between_node_and_ancestor import TreeNode
+from topic.maximum_product_of_splitted_binary_tree.maximum_product_of_splitted_binary_tree import Solution
+from topic.maximum_product_of_splitted_binary_tree.maximum_product_of_splitted_binary_tree import TreeNode
 
 
 def run():
@@ -10,7 +10,7 @@ def run():
     tree.val = 1
     tree.left = tree2
 
-    print(solution.maxAncestorDiff(tree))
+    print(solution.maxProduct(tree))
 
 
 if __name__ == '__main__':
