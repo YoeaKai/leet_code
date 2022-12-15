@@ -1,9 +1,9 @@
-from topic.climbing_stairs.py.climbing_stairs import Solution
+from topic.longest_common_subsequence.py.longest_common_subsequence import Solution
 
 
 def run():
     solution = Solution()
-    print(solution.climbStairs(4))
+    print(solution.longestCommonSubsequence("dknkdizqoe", "dulixhaqz"))
 
 
 if __name__ == '__main__':
