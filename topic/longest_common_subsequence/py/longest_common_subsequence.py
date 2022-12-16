@@ -1,15 +1,15 @@
 class Solution:
     # DP solution after dimensionality reduction.
-    # def longestCommonSubsequence(self, text1: str, text2: str) -> int:
-    #     dp = [0] * len(text2)
-    #     for _, char1 in enumerate(text1):
-    #         pre = dp[0]
-    #         dp[0] += 0 if char1 != text2[0] else 1
-    #         for j, char2 in enumerate(text2[1:], start=1):
-    #             tmp = dp[j]
-    #             dp[j] = pre + 1 if char1 == char2 else max(dp[j-1], dp[j])
-    #             pre = tmp
-    #     return dp[-1]
+    def longestCommonSubsequence(self, text1: str, text2: str) -> int:
+        dp = [0] * len(text2)
+        for _, char1 in enumerate(text1):
+            pre = dp[0]
+            dp[0] = 1 if char1 == text2[0] else dp[0]
+            for j, char2 in enumerate(text2[1:], start=1):
+                tmp = dp[j]
+                dp[j] = pre + 1 if char1 == char2 else max(dp[j-1], dp[j])
+                pre = tmp
+        return dp[-1]
 
     # DP solution.
     def longestCommonSubsequence2(self, text1: str, text2: str) -> int:

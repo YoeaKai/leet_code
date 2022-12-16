@@ -3,7 +3,7 @@ from topic.longest_common_subsequence.py.longest_common_subsequence import Solut
 
 def run():
     solution = Solution()
-    print(solution.longestCommonSubsequence("dknkdizqoe", "dulixhaqz"))
+    print(solution.longestCommonSubsequence("abcde", "ace"))
 
 
 if __name__ == '__main__':
