@@ -1,10 +1,9 @@
-from topic.keys_and_rooms.keys_and_rooms import Solution
+from topic.possible_bipartition.possible_bipartition import Solution
 
 
 def run():
     solution = Solution()
-    print(solution.canVisitAllRooms([[1], [2], [3], []]))
-    print(solution.canVisitAllRooms([[1, 3], [3, 0, 1], [2], [0]]))
+    print(solution.possibleBipartition(4, [[1, 2], [1, 3], [2, 4]]))
 
 
 if __name__ == '__main__':
