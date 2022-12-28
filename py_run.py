@@ -1,9 +1,9 @@
-from topic.possible_bipartition.possible_bipartition import Solution
+from topic.remove_stones_to_minimize_the_total.remove_stones_to_minimize_the_total import Solution
 
 
 def run():
     solution = Solution()
-    print(solution.possibleBipartition(4, [[1, 2], [1, 3], [2, 4]]))
+    print(solution.minStoneSum([5,4,9], 2))
 
 
 if __name__ == '__main__':
