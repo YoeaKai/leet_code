@@ -1,9 +1,9 @@
-from topic.single_threaded_CPU.single_threaded_CPU import Solution
+from topic.all_paths_from_source_to_target.all_paths_from_source_to_target import Solution
 
 
 def run():
     solution = Solution()
-    print(solution.getOrder([[1, 2], [2, 4], [3, 2], [4, 1]]))
+    print(solution.allPathsSourceTarget([[1, 2], [3], [3], []]))
 
 
 if __name__ == '__main__':
