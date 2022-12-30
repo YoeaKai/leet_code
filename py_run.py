@@ -1,9 +1,9 @@
-from topic.remove_stones_to_minimize_the_total.remove_stones_to_minimize_the_total import Solution
+from topic.single_threaded_CPU.single_threaded_CPU import Solution
 
 
 def run():
     solution = Solution()
-    print(solution.minStoneSum([5,4,9], 2))
+    print(solution.getOrder([[1, 2], [2, 4], [3, 2], [4, 1]]))
 
 
 if __name__ == '__main__':
