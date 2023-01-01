@@ -1,9 +1,9 @@
-from topic.all_paths_from_source_to_target.all_paths_from_source_to_target import Solution
+from topic.word_pattern.word_pattern import Solution
 
 
 def run():
     solution = Solution()
-    print(solution.allPathsSourceTarget([[1, 2], [3], [3], []]))
+    print(solution.wordPattern("abba", "dog cat cat dog"))
 
 
 if __name__ == '__main__':
