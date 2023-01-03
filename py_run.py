@@ -1,9 +1,9 @@
-from topic.word_pattern.word_pattern import Solution
+from topic.delete_columns_to_make_sorted.delete_columns_to_make_sorted import Solution
 
 
 def run():
     solution = Solution()
-    print(solution.wordPattern("abba", "dog cat cat dog"))
+    print(solution.minDeletionSize(["cba", "daf", "ghi"]))
 
 
 if __name__ == '__main__':
