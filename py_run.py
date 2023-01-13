@@ -1,9 +1,9 @@
-from topic.maximum_ice_cream_bars.maximum_ice_cream_bars import Solution
+from topic.longest_path_with_different_adjacent_characters.longest_path_with_different_adjacent_characters import Solution
 
 
 def run():
     solution = Solution()
-    print(solution.maxIceCream([1,3,2,4,1], 7))
+    print(solution.longestPath([-1,0,0,1,1,2], "abacbe"))
 
 
 if __name__ == '__main__':
