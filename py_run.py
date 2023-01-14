@@ -1,9 +1,9 @@
-from topic.longest_path_with_different_adjacent_characters.longest_path_with_different_adjacent_characters import Solution
+from topic.lexicographically_smallest_equivalent_string.lexicographically_smallest_equivalent_string import Solution
 
 
 def run():
     solution = Solution()
-    print(solution.longestPath([-1,0,0,1,1,2], "abacbe"))
+    print(solution.smallestEquivalentString("paaker", "morris", "parser"))
 
 
 if __name__ == '__main__':
