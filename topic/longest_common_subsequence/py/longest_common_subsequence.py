@@ -12,7 +12,7 @@ class Solution:
         return dp[-1]
 
     # DP solution.
-    def longestCommonSubsequence2(self, text1: str, text2: str) -> int:
+    def longestCommonSubsequence_2(self, text1: str, text2: str) -> int:
         dp = [[0] * (len(text2) + 1) for _ in range(len(text1) + 1)]
         for i, char1 in enumerate(text1):
             for j, char2 in enumerate(text2):

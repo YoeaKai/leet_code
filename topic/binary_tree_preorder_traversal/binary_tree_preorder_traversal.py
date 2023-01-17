@@ -15,7 +15,7 @@ class Solution:
 
         return [root.val] + self.preorderTraversal(root.left) + self.preorderTraversal(root.right)
 
-    def preorderTraversal2(self, root: Optional[TreeNode]) -> List[int]:
+    def preorderTraversal_2(self, root: Optional[TreeNode]) -> List[int]:
         preorder = []
 
         def dfs(node):

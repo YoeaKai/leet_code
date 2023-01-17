@@ -64,42 +64,4 @@ public:
 
 		return dp[numLaps];
 	}
-
-	// Optimize failed
-	// int minimumFinishTime(vector<vector<int> > &tires, int changeTime, int numLaps)
-	// {
-	// 	tires = removeUnused(tires);
-	// 	int n = tires.size();
-
-	// 	// Find the minimum time for each lap.
-	// 	vector<int> withoutChangeMin(20, limit);
-	// 	for (int i = 0; i < n; i++)
-	// 	{
-	// 		int pre = tires[i][0], cur = tires[i][0], tmp;
-	// 		withoutChangeMin[1] = min(withoutChangeMin[1], cur);
-
-	// 		for (int j = 2; j < 20; j++)
-	// 		{
-	// 			if ((long long)pre * tires[i][1] >= limit)
-	// 				break;
-	// 			tmp = cur;
-	// 			cur = pre * tires[i][1];
-	// 			pre = cur;
-	// 			// since we define it as the total time, rather than just the time for the j-th lap we have to make it prefix sum.
-	// 			cur += tmp;
-	// 			withoutChangeMin[j] = min(withoutChangeMin[j], cur);
-	// 		}
-	// 	}
-
-	// 	// withoutChangeMin change to minTime.
-	// 	for (int x = 1; x <= numLaps; x++)
-	// 	{
-	// 		for (int j = x - 1; j > 0 && j >= x - 18; j--)
-	// 		{
-	// 			withoutChangeMin[x] = min(withoutChangeMin[x], withoutChangeMin[j] + changeTime + withoutChangeMin[x - j]);
-	// 		}
-	// 	}
-
-	// 	return withoutChangeMin[numLaps];
-	// }
 };

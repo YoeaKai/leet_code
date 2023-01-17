@@ -24,7 +24,7 @@ class Solution:
         return stack[0]
 
     # Intuitive solution.
-    def evalRPN2(self, tokens: List[str]) -> int:
+    def evalRPN_2(self, tokens: List[str]) -> int:
         stack = []
 
         for token in tokens:
