@@ -16,7 +16,7 @@ class Solution:
             return count
 
         res = [0] * n
-        
+
         graph = defaultdict(list)
         for a, b in edges:
             graph[a] += [b]
@@ -24,4 +24,4 @@ class Solution:
 
         dfs(0, -1)
 
-        return res 
+        return res

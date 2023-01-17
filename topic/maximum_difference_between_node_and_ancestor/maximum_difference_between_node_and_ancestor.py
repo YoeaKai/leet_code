@@ -17,8 +17,9 @@ class Solution:
 
             res = max(abs(root.val - minValue), abs(root.val - maxValue))
 
-            minValue, maxValue = min(minValue, root.val), max(maxValue, root.val)
+            minValue, maxValue = min(
+                minValue, root.val), max(maxValue, root.val)
 
             return max(res, dfs(root.left, minValue, maxValue), dfs(root.right, minValue, maxValue))
-            
+
         return dfs(root, root.val, root.val)

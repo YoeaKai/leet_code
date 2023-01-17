@@ -1,6 +1,7 @@
 from typing import List
 from typing import operator
 
+
 class Solution:
     def __init__(self):
         self.operators = {
@@ -41,4 +42,3 @@ class Solution:
                     stack.append(int(val2/val1))
 
         return stack.pop()
-        
