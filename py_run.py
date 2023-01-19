@@ -1,9 +1,9 @@
-from topic.flip_string_to_monotone_increasing.flip_string_to_monotone_increasing import Solution
+from topic.subarray_sums_divisible_by_k.subarray_sums_divisible_by_k import Solution
 
 
 def run():
     solution = Solution()
-    print(solution.minFlipsMonoIncr("11011"))
+    print(solution.subarraysDivByK([4, 5, 0, -2, 0, 1], 5))
 
 
 if __name__ == '__main__':
