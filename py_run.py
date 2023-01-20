@@ -1,9 +1,9 @@
-from topic.subarray_sums_divisible_by_k.subarray_sums_divisible_by_k import Solution
+from topic.non_decreasing_subsequences.non_decreasing_subsequences import Solution
 
 
 def run():
     solution = Solution()
-    print(solution.subarraysDivByK([4, 5, 0, -2, 0, 1], 5))
+    print(solution.findSubsequences([4, 6, 7, 7]))
 
 
 if __name__ == '__main__':
