@@ -1,9 +1,10 @@
-from topic.non_decreasing_subsequences.non_decreasing_subsequences import Solution
+from topic.word_break.word_break import Solution
 
 
 def run():
     solution = Solution()
-    print(solution.findSubsequences([4, 6, 7, 7]))
+    print(solution.wordBreak("catsandog", [
+          "cats", "dog", "sand", "and", "cat"]))
 
 
 if __name__ == '__main__':
