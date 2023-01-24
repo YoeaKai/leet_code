@@ -1,10 +1,10 @@
-from topic.word_break.word_break import Solution
+from topic.snakes_and_ladders.snakes_and_ladders import Solution
 
 
 def run():
     solution = Solution()
-    print(solution.wordBreak("catsandog", [
-          "cats", "dog", "sand", "and", "cat"]))
+    print(solution.snakesAndLadders([[-1, -1, -1, -1, -1, -1], [-1, -1, -1, -1, -1, -1], [-1, -1, -1, -
+          1, -1, -1], [-1, 35, -1, -1, 13, -1], [-1, -1, -1, -1, -1, -1], [-1, 15, -1, -1, -1, -1]]))
 
 
 if __name__ == '__main__':
