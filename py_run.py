@@ -1,10 +1,9 @@
-from topic.snakes_and_ladders.snakes_and_ladders import Solution
+from topic.find_closest_node_to_given_two_nodes.find_closest_node_to_given_two_nodes import Solution
 
 
 def run():
     solution = Solution()
-    print(solution.snakesAndLadders([[-1, -1, -1, -1, -1, -1], [-1, -1, -1, -1, -1, -1], [-1, -1, -1, -
-          1, -1, -1], [-1, 35, -1, -1, 13, -1], [-1, -1, -1, -1, -1, -1], [-1, 15, -1, -1, -1, -1]]))
+    print(solution.closestMeetingNode([2, 2, 3, -1], 0, 1))
 
 
 if __name__ == '__main__':
