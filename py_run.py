@@ -1,9 +1,9 @@
-from topic.find_closest_node_to_given_two_nodes.find_closest_node_to_given_two_nodes import Solution
+from topic.concatenated_words.concatenated_words import Solution
 
 
 def run():
     solution = Solution()
-    print(solution.closestMeetingNode([2, 2, 3, -1], 0, 1))
+    print(solution.findAllConcatenatedWordsInADict(["cat", "dog", "catdog"]))
 
 
 if __name__ == '__main__':
