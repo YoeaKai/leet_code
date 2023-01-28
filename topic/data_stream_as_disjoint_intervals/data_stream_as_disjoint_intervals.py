@@ -10,7 +10,15 @@ class SummaryRanges:
         self.nums.add(value)
 
     def getIntervals(self) -> List[List[int]]:
-        return None
+        intervals = []
+
+        for val in sorted(self.nums):
+            if intervals and val - intervals[-1][1] == 1:
+                intervals[-1][1] = val
+            else:
+                intervals.append([val, val])
+
+        return intervals
 
         # Your SummaryRanges object will be instantiated and called as such:
         # obj = SummaryRanges()
