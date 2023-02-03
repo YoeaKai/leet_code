@@ -1,10 +1,14 @@
-from topic.best_team_with_no_conflicts.best_team_with_no_conflicts import Solution
+from topic.verifying_an_alien_dictionary.verifying_an_alien_dictionary import Solution
 
 
 def run():
     solution = Solution()
-    print(solution.bestTeamScore([319776, 611683, 835240, 602298, 430007,
-          574, 142444, 858606, 734364, 896074], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]))
+    print(solution.isAlienSorted_2(
+        ["apple", "app"], "abcdefghijklmnopqrstuvwxyz"))
+    print(solution.isAlienSorted_2(
+        ["word", "world", "row"], "worldabcefghijkmnpqstuvxyz"))
+    print(solution.isAlienSorted_2(
+        ["hello", "leetcode"], "hlabcdefgijkmnopqrstuvwxyz"))
 
 
 if __name__ == '__main__':
