@@ -1,14 +1,9 @@
-from topic.verifying_an_alien_dictionary.verifying_an_alien_dictionary import Solution
+from topic.permutation_in_string.permutation_in_string import Solution
 
 
 def run():
     solution = Solution()
-    print(solution.isAlienSorted_2(
-        ["apple", "app"], "abcdefghijklmnopqrstuvwxyz"))
-    print(solution.isAlienSorted_2(
-        ["word", "world", "row"], "worldabcefghijkmnpqstuvxyz"))
-    print(solution.isAlienSorted_2(
-        ["hello", "leetcode"], "hlabcdefgijkmnopqrstuvwxyz"))
+    print(solution.checkInclusion("abab", "dbadbaooo"))
 
 
 if __name__ == '__main__':
