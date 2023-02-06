@@ -1,9 +1,10 @@
-from topic.find_all_anagrams_in_a_string.find_all_anagrams_in_a_string import Solution
+from topic.shuffle_the_array.shuffle_the_array import Solution
 
 
 def run():
     solution = Solution()
-    print(solution.findAnagrams("abrca", "abc"))
+    print(solution.shuffle([0, 2, 3, 1, 3, 5], 3))
+    # print(solution.shuffle([2, 5, 1, 3, 4, 7], 3))
 
 
 if __name__ == '__main__':
