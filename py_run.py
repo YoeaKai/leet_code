@@ -1,10 +1,9 @@
-from topic.shuffle_the_array.shuffle_the_array import Solution
+from topic.naming_a_company.naming_a_company import Solution
 
 
 def run():
     solution = Solution()
-    print(solution.shuffle([0, 2, 3, 1, 3, 5], 3))
-    # print(solution.shuffle([2, 5, 1, 3, 4, 7], 3))
+    print(solution.distinctNames(["coffee", "donuts", "time", "toffee"]))
 
 
 if __name__ == '__main__':
