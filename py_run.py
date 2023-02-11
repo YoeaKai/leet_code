@@ -1,9 +1,9 @@
-from topic.naming_a_company.naming_a_company import Solution
+from topic.shortest_path_with_alternating_colors.shortest_path_with_alternating_colors import Solution
 
 
 def run():
     solution = Solution()
-    print(solution.distinctNames(["coffee", "donuts", "time", "toffee"]))
+    print(solution.shortestAlternatingPaths(3, [[0, 1], [1, 2]], []))
 
 
 if __name__ == '__main__':
