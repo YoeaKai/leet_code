@@ -1,5 +1,5 @@
 # leet_code
-Practice code of leetcode.
+Solution of Leetcode topic.
 
 Golang Setting :
 1. "go.gopath": "/Users/<userName>/go",
