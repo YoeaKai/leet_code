@@ -1,4 +1,5 @@
 from typing import Optional
+from sys import maxsize
 
 
 class TreeNode:
@@ -10,4 +11,13 @@ class TreeNode:
 
 class Solution:
     def minDiffInBST(self, root: Optional[TreeNode]) -> int:
-        return 1
+        self.prev = -maxsize - 1
+
+        def dfs(node) -> int:
+            if not node:
+                return maxsize
+            min_diff = min(dfs(node.left), node.val - self.prev)
+            self.prev = node.val
+            return min(min_diff, dfs(node.right))
+
+        return dfs(root)
