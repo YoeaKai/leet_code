@@ -23,3 +23,10 @@ Python run application:
 ```
 python3 py_run.py
 ```
+
+---
+
+C++ run application:
+```
+application/cpp/application.cpp
+```
