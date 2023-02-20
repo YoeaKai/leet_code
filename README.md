@@ -26,7 +26,7 @@ python3 py_run.py
 
 ---
 
-C++ run application:
+Compile C++ application:
 ```
 application/cpp/application.cpp
 ```
