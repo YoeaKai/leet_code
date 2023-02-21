@@ -1,10 +1,9 @@
-from topic.minimum_fuel_cost_to_report_to_the_capital.minimum_fuel_cost_to_report_to_the_capital import Solution
+from topic.single_element_in_a_sorted_array.single_element_in_a_sorted_array import Solution
 
 
 def run():
     solution = Solution()
-    print(solution.minimumFuelCost(
-        [[3, 1], [3, 2], [1, 0], [0, 4], [0, 5], [4, 6]], 2))
+    print(solution.singleNonDuplicate([1, 1, 2, 3, 3, 4, 4, 8, 8]))
 
 
 if __name__ == '__main__':
