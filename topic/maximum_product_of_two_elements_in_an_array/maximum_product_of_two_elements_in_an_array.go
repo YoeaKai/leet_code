@@ -15,3 +15,5 @@ func MaxProduct(nums []int) int {
 
 	return (m1 - 1) * (m2 - 1)
 }
+
+// push account test 1
