@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/maximum_product_of_two_elements_in_an_array"
+	"github.com/YoeaKai/leet_code/topic/special_positions_in_a_binary_matrix"
 )
 
 func run() {
-	println(maximum_product_of_two_elements_in_an_array.MaxProduct([]int{2, 5, 3, 9, 5, 3}))
+	println(special_positions_in_a_binary_matrix.NumSpecial([][]int{{1, 0, 0}, {0, 0, 1}, {1, 0, 0}}))
 }
 
 func main() {
