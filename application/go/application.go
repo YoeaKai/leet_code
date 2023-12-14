@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/special_positions_in_a_binary_matrix"
+	"github.com/YoeaKai/leet_code/topic/difference_between_ones_and_zeros_in_row_and_column"
 )
 
 func run() {
-	println(special_positions_in_a_binary_matrix.NumSpecial([][]int{{1, 0, 0}, {0, 0, 1}, {1, 0, 0}}))
+	println(difference_between_ones_and_zeros_in_row_and_column.OnesMinusZeros([][]int{{0, 1, 1}, {1, 0, 1}, {0, 0, 1}}))
 }
 
 func main() {
