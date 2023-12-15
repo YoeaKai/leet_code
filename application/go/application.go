@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/difference_between_ones_and_zeros_in_row_and_column"
+	"github.com/YoeaKai/leet_code/topic/destination_city"
 )
 
 func run() {
-	println(difference_between_ones_and_zeros_in_row_and_column.OnesMinusZeros([][]int{{0, 1, 1}, {1, 0, 1}, {0, 0, 1}}))
+	println(destination_city.DestCity([][]string{{"London", "New York"}, {"New York", "Lima"}, {"Lima", "Sao Paulo"}}))
 }
 
 func main() {
