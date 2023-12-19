@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/destination_city"
+	"github.com/YoeaKai/leet_code/topic/image_smoother"
 )
 
 func run() {
-	println(destination_city.DestCity([][]string{{"London", "New York"}, {"New York", "Lima"}, {"Lima", "Sao Paulo"}}))
+	println(image_smoother.ImageSmoother([][]int{{1, 1, 1}, {1, 0, 1}, {1, 1, 1}}))
 }
 
 func main() {
