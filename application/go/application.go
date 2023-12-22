@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/widest_vertical_area_between_two_points_containing_no_points"
+	"github.com/YoeaKai/leet_code/topic/maximum_score_after_splitting_a_string"
 )
 
 func run() {
-	println(widest_vertical_area_between_two_points_containing_no_points.MaxWidthOfVerticalArea([][]int{{8, 7}, {9, 9}, {7, 4}, {9, 7}}))
+	println(maximum_score_after_splitting_a_string.MaxScore("011101"))
 }
 
 func main() {
