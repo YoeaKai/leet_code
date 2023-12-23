@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/maximum_score_after_splitting_a_string"
+	"github.com/YoeaKai/leet_code/topic/path_crossing"
 )
 
 func run() {
-	println(maximum_score_after_splitting_a_string.MaxScore("011101"))
+	println(path_crossing.IsPathCrossing("NESWW"))
 }
 
 func main() {
