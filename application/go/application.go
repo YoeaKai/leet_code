@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/path_crossing"
+	"github.com/YoeaKai/leet_code/topic/minimum_changes_to_make_alternating_binary_string"
 )
 
 func run() {
-	println(path_crossing.IsPathCrossing("NESWW"))
+	println(minimum_changes_to_make_alternating_binary_string.MinOperations("0100"))
 }
 
 func main() {
