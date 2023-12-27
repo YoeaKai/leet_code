@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/minimum_changes_to_make_alternating_binary_string"
+	"github.com/YoeaKai/leet_code/topic/minimum_time_to_make_rope_colorful"
 )
 
 func run() {
-	println(minimum_changes_to_make_alternating_binary_string.MinOperations("0100"))
+	println(minimum_time_to_make_rope_colorful.MinCost("bbbaaa", []int{4, 9, 3, 8, 8, 9}))
 }
 
 func main() {
