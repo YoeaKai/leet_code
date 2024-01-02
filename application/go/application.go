@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/YoeaKai/leet_code/topic/minimum_time_to_make_rope_colorful"
+	"github.com/YoeaKai/leet_code/topic/convert_an_array_into_a_2d_array_with_conditions"
 )
 
 func run() {
-	println(minimum_time_to_make_rope_colorful.MinCost("bbbaaa", []int{4, 9, 3, 8, 8, 9}))
+	println(convert_an_array_into_a_2d_array_with_conditions.FindMatrix([]int{1, 3, 4, 1, 2, 3, 1}))
 }
 
 func main() {
